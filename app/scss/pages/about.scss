@@ -1,0 +1,197 @@
+@import '../mixins';
+@import '../variables';
+
+
+// OUR PHILOSOPHY
+
+section#our-philosophy {
+  background-color: #ececec;
+
+  div.container {
+    padding: 101px 136px 95px 136px;
+
+    div.row {
+      position: relative;
+
+      div.info-block {
+        margin-top: 143px;
+        z-index: 99;
+  
+        h1.title {
+          font-size: 50px;
+          font-weight: bold;
+          line-height: 1.2;
+          letter-spacing: 0.5px;
+          margin: 0;
+        }
+  
+        div.text-block {
+          max-width: 679px;
+          margin-top: 50px;
+          padding: 54px 51px 50px 51px;
+          background-color: #ffffff;
+  
+          p.info-text {
+            font-size: 18px;
+            line-height: 1.56;
+            color: #808080;
+            margin-bottom: 35px;
+          }
+  
+          p.info-text.bold {
+            font-weight: bold;
+            color: #000000;
+            margin: 0;
+          }
+  
+          ol.text-list {
+            font-size: 18px;
+            line-height: 1.56;
+            color: #808080;
+            padding-left: 32px;
+  
+            li {
+              padding-left: 4px;
+  
+              p.info-text {
+                margin-bottom: 32px;
+              }
+            }
+          }
+        }
+      }
+  
+      div.img-block {
+        width: 100%;
+        max-width: 598px;
+        position: absolute;
+        right: 0;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// CLOSE OUR PHILOSOPHY
+
+
+
+// VIDEO SECTION
+
+section#video-section {
+  div.container {
+    padding: 77px 136px 0 136px;
+  }
+
+  div.row {
+    justify-content: center;
+
+    h2.title {
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    div.video {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 25px;
+      width: 100%;
+      height: 0;
+      margin-top: 39px;
+      
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// CLOSE VIDEO SECTION
+
+
+
+// OUR TEAM
+
+section#our-team {
+  div.container {
+    padding: 90px 136px 90px 136px;
+
+    div.row {
+      justify-content: flex-end;
+      position: relative;
+
+      div.img-block {
+        width: 100%;
+        max-width: 598px;
+        position: absolute;
+        left: 0;
+  
+        img {
+          width: 100%;
+        }
+      }
+
+      div.info-block {
+        margin-top: 143px;
+        z-index: 99;
+  
+        h1.title {
+          font-size: 50px;
+          font-weight: bold;
+          line-height: 1.2;
+          letter-spacing: 0.5px;
+          text-align: right;
+          margin: 0;
+          margin-right: 130px;
+        }
+  
+        div.text-block {
+          max-width: 679px;
+          margin-top: 50px;
+          padding: 54px 51px 78px 51px;
+          background-color: #ececec;
+  
+          p.info-text {
+            font-size: 18px;
+            line-height: 1.56;
+            color: #383838;
+          }
+  
+          p.info-text.bold {
+            font-weight: bold;
+            color: #000000;
+            margin: 0;
+          }
+
+          a.link {
+            @include standardButton(275px, #383838, #383838, #ffffff);
+            display: flex;
+            justify-content: center;
+            margin-top: 49px;
+
+            &:hover {
+              background-color: #24449d;
+              border: 1px solid #24449d;
+            }
+
+            img {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// CLOSE OUR TEAM
