@@ -1,0 +1,43 @@
+@import '../mixins';
+@import '../variables';
+
+// PRODUCTS
+
+section#products {
+  div.container {
+    display: flex;
+    justify-content: flex-start;
+    
+    div.filter {
+      width: 346px;
+      padding: 39px 50px 10px 50px;
+      background-color: #f3f4f5;
+
+      div.row {
+        padding-bottom: 29px;
+        border-bottom: 1px solid #808080;
+
+        p.filter-title {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.25;
+          letter-spacing: 0.5px;
+          color: #383838;
+        }
+
+        a.filter-clear {
+          font-size: 14px;
+          letter-spacing: 1px;
+          color: #383838;
+          @include transition-hover;
+  
+          &:hover {
+            color: #24449d;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CLOSE PRODUCTS
