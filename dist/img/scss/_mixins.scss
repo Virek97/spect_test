@@ -1,0 +1,40 @@
+@import "variables";
+
+@mixin background($backgroundImg) {
+  background: url($backgroundImg) no-repeat center top;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin standard-button($width) {
+  width: $width;
+  height: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $standardColor;
+  cursor: pointer;
+  @include transition-hover;
+}
+
+@mixin transition-hover {
+  transition: 0.2s;
+}
+
+@mixin section-title($color) {
+  font-size: 46px;
+  font-weight: 700;
+  color: $color;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: $color;
+    content: "";
+    margin: auto;
+    margin-bottom: 13px;
+  }
+}

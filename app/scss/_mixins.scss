@@ -1,0 +1,31 @@
+@import "variables";
+
+@mixin backgroundIMG($backgroundImg) {
+  background: url($backgroundImg) no-repeat center top;
+  background-position: center center;
+  background-size: cover;
+}
+
+@mixin standardButton($width, $bgColor, $borderColor, $textColor) {
+  display: block;
+  width: $width;
+  max-height: 42px;
+  padding: 11px 0;
+  background-color: $bgColor;
+  border: 1px solid $borderColor;
+  border-radius: 21px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.43;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  color: $textColor;
+  cursor: pointer;
+  @include transition-hover;
+}
+
+@mixin transition-hover {
+  transition: 0.25s;
+}
