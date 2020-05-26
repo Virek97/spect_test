@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="187" height="42" viewBox="0 0 187 42">
-    <g fill="none" fill-rule="evenodd">
-        <rect width="186" height="41" x=".5" y=".5" stroke="#383838" rx="20.5"/>
-        <text fill="#383838" font-family="Muli-SemiBold, Muli" font-size="14" font-weight="500" letter-spacing="1">
-            <tspan x="23.581" y="25">VIEW ALL EVENTS</tspan>
-        </text>
-    </g>
-</svg>
