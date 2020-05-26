@@ -17,7 +17,7 @@ section#our-philosophy {
         margin-top: 143px;
         z-index: 99;
   
-        h1.title {
+        h2.title {
           font-size: 50px;
           font-weight: bold;
           line-height: 1.2;
@@ -61,8 +61,8 @@ section#our-philosophy {
         }
       }
   
-      div.img-block {
-        width: 100%;
+      div.image-block {
+        width: 50%;
         max-width: 598px;
         position: absolute;
         right: 0;
@@ -130,22 +130,10 @@ section#our-team {
       justify-content: flex-end;
       position: relative;
 
-      div.img-block {
-        width: 100%;
-        max-width: 598px;
-        position: absolute;
-        left: 0;
+      div.info-blocks {
+        padding-top: 143px;
   
-        img {
-          width: 100%;
-        }
-      }
-
-      div.info-block {
-        margin-top: 143px;
-        z-index: 99;
-  
-        h1.title {
+        h2.title {
           font-size: 50px;
           font-weight: bold;
           line-height: 1.2;
@@ -154,12 +142,26 @@ section#our-team {
           margin: 0;
           margin-right: 130px;
         }
+
+        div.image-block {
+          width: 50%;
+          max-width: 598px;
+          position: absolute;
+          left: 0;
+          top: 0;
+    
+          img {
+            width: 100%;
+          }
+        }
   
         div.text-block {
           max-width: 679px;
           margin-top: 50px;
           padding: 54px 51px 78px 51px;
           background-color: #ececec;
+          position: relative;
+          z-index: 99;
   
           p.info-text {
             font-size: 18px;
@@ -195,3 +197,200 @@ section#our-team {
 }
 
 // CLOSE OUR TEAM
+
+
+
+@media screen and (max-width: 1220px) {
+  section#our-philosophy {
+    div.container {
+      padding: 90px 70px 90px 70px;
+
+      div.row {
+        div.info-block {
+          margin-top: 0;
+        }
+        div.image-block {
+          position: relative;
+          margin-top: 110px;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  section#video-section {
+    div.container {
+      padding: 90px 70px 90px 70px;
+    }
+  }
+
+  section#our-team {
+    div.container {
+      padding: 90px 70px 90px 70px;
+
+      div.row {
+        div.info-blocks {
+          padding-top: 0;
+
+          h2.title {
+            margin: 0;
+          }
+
+          div.blocks {
+            display: flex;
+
+            div.image-block {
+              position: relative;
+              margin-top: 50px;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  section#our-philosophy {
+    div.container {
+      div.row {
+        flex-direction: column;
+
+        div.image-block {
+          width: 100%;
+          max-width: 679px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  section#our-team {
+    div.container {
+      div.row {
+        flex-direction: column;
+
+        div.info-blocks {
+          h2.title {
+            text-align: center;
+          }
+          
+          div.blocks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+  
+            div.image-block {
+              width: 100%;
+              max-width: 679px;
+              position: relative;
+              margin-top: 50px;
+
+              img {
+                display: block;
+                height: 100%;
+              }
+            }
+  
+            div.text-block {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#our-philosophy {
+    div.container {
+      padding: 60px 16px 68px 16px;
+
+      div.row {
+        div.info-block {
+          h2.title {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: 0.3px;
+          }
+
+          div.text-block {
+            margin-top: 25px;
+            padding: 32px 16px 38px 16px;
+
+            p.info-text {
+              font-size: 16px;
+              line-height: 1.63;
+            }
+
+            ol.text-list {
+              font-size: 16px;
+              line-height: 1.63;
+              padding-left: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section#video-section {
+    div.container {
+      padding: 52px 0 0 0;
+
+      div.row {
+        h2.title {
+          font-size: 30px;
+          line-height: 1.33;
+          letter-spacing: 0.3px;
+        }
+
+        div.video {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  section#our-team {
+    div.container {
+      padding: 56px 0 0 0;
+
+      div.row {
+        div.info-blocks {
+          padding-bottom: 35px;
+
+          h2.title {
+            font-size: 30px;
+            line-height: 1.33;
+            letter-spacing: 0.3px;
+            text-align: left;
+            padding: 0 16px;
+          }
+          
+          div.blocks {
+            div.image-block {
+              margin-top: 20px;
+            }
+
+            div.text-block {
+              padding: 21px 16px 35px 16px;
+
+              p.info-text {
+                font-size: 16px;
+                line-height: 1.63;
+              }
+
+              a.link {
+                margin-top: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
