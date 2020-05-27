@@ -198,6 +198,10 @@
             </li>
           </ul>
         </div>
+        <div class="row mobile-buttons">
+          <button class="apply-changes close-filter">Apply changes <span class="arrow"></span></button>
+          <button class="close-button close-filter">Close <img src="img/icons/filter-close.svg" alt="close"></button>
+        </div>
       </div>
       <div class="products-catalog">
         <div class="catalog-search">
@@ -206,7 +210,10 @@
             <span class="magnifying-glass"><img src="img/icons/search-white.svg" alt="magnifying glass"></span>
           </div>
           <div class="row search-controls">
-            <p class="filter-title">Filter</p>
+            <div class="title-block">
+              <p class="filter-title">Filter</p>
+              <button href="#" class="filter-clear">Zurücksetzen</button>
+            </div>
             <div class="filter-tag">
               <p class="tag-name">Gerätetyp: Druckregler</p>
               <button class="tag-close"><img src="img/icons/tag-close.svg" alt="close"></button>
@@ -215,7 +222,8 @@
               <p class="tag-name">Art des Gases: Korrosiv</p>
               <button class="tag-close"><img src="img/icons/tag-close.svg" alt="close"></button>
             </div>
-            <button href="#" class="filter-clear">Zurücksetzen</button>
+            <button href="#" class="filter-clear desktop-button">Zurücksetzen</button>
+            <button href="#" id="show-filter">+  Alle anzeigen</button>
           </div>
           <div class="row catalog-list">
             <div class="find-count">
@@ -477,15 +485,15 @@
             </div>
           </div>
           <div class="row catalog-pagination">
-            <ul class="nav-list">
+            <ul class="pagination-list">
               <li><a href="#" class="page-link active">1</a></li>
               <li><a href="#" class="page-link">2</a></li>
               <li><a href="#" class="page-link">3</a></li>
               <li><a href="#" class="page-link">4</a></li>
               <li><a href="#" class="page-link">5</a></li>
-              <li><span class="dots">...</span></li>
-              <li><a href="#" class="page-link">9</a></li>
-              <li><a href="#" class="page-link">10</a></li>
+              <li><span class="dots desktop-link">...</span></li>
+              <li><a href="#" class="page-link desktop-link">9</a></li>
+              <li><a href="#" class="page-link desktop-link">10</a></li>
               <li><a href="#" class="page-link"><img src="img/icons/pagination-1.png" alt="arrow"></a></li>
               <li><a href="#" class="page-link"><img src="img/icons/pagination-2.png" alt="arrow"></a></li>
             </ul>
@@ -569,6 +577,18 @@
       event.preventDefault();
       var $parentBlock = $(this).parents(".filter-block"); 
       $parentBlock.toggleClass("hidden-block");
+    });
+
+    $("#show-filter").on("click", function(event){
+      event.preventDefault();
+      var $filterBlock = $(".filter"); 
+      $filterBlock.toggleClass("opened");
+    });
+    
+    $(".close-filter").on("click", function(event){
+      event.preventDefault();
+      var $filterBlock = $(".filter"); 
+      $filterBlock.toggleClass("opened");
     });
   </script>
 </body>
