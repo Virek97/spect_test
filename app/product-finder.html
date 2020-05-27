@@ -20,11 +20,11 @@
         <div class="menu-container">
           <nav id="main-menu">
             <ul>
-              <li class="menu-item"><a href="product-finder.html">Product Finder</a></li>
+              <li class="menu-item"><a href="product-finder.html" class="active">Product Finder</a></li>
               <li class="menu-item"><a href="about.html">About</a></li>
               <li class="menu-item"><a href="#">Trade Shows</a></li>
               <li class="menu-item"><a href="#">Seminars</a></li>
-              <li class="menu-item"><a href="downloads.html" class="active">Downloads</a></li>
+              <li class="menu-item"><a href="downloads.html">Downloads</a></li>
               <li class="menu-item"><a href="#">Contact</a></li>
             </ul>
           </nav>
@@ -71,11 +71,434 @@
   </header>
   <section id="products">
     <div class="container">
-      <div class="filter top">
+      <div class="filter">
         <div class="row">
-          <p class="filter-title">Filter</p>
-          <a href="#" class="filter-clear">Zurücksetzen</a>
+          <div class="title-block">
+            <p class="filter-title">Filter</p>
+            <button href="#" class="filter-clear">Zurücksetzen</button>
+          </div>
         </div>
+        <div class="row filter-block">
+          <div class="title-block">
+            <p class="filter-title">Produktbereich</p>
+            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_0" name="spectrotec">
+              <label for="product-type_0" id="tec">spectro<span class="bold">tec</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_1" name="spectrocom">
+              <label for="product-type_1" id="com">spectro<span class="bold">com</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_18" name="spectrolab">
+              <label for="product-type_18" id="lab">spectro<span class="bold">lab</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_19" name="spectrocem">
+              <label for="product-type_19" id="cem">spectro<span class="bold">cem</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_20" name="spectropur">
+              <label for="product-type_20" id="pur">spectro<span class="bold">pur</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_21" name="spectromed">
+              <label for="product-type_21" id="med">spectro<span class="bold">med</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_22" name="spectrosys">
+              <label for="product-type_22" id="sys">spectro<span class="bold">sys</span></label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_23" name="spectromol">
+              <label for="product-type_23" id="mol">spectro<span class="bold">mol</span></label>
+            </li>
+          </ul>
+        </div>
+        <div class="row filter-block">
+          <div class="title-block">
+            <p class="filter-title">Gerätetyp</p>
+            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_2" name="Alarm- / Steuereinheiten">
+              <label for="product-type_2">Alarm- / Steuereinheiten</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_3" name="Druckregler">
+              <label for="product-type_3">Druckregler</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_4" name="Entnahmestellen">
+              <label for="product-type_4">Entnahmestellen</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_5" name="Entspannungsstationen">
+              <label for="product-type_5">Entspannungsstationen</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_6" name="Filter">
+              <label for="product-type_6">Filter</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_7" name="Kontaktmanometer">
+              <label for="product-type_7">Kontaktmanometer</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_8" name="Reinigungspatronen (mol)">
+              <label for="product-type_8">Reinigungspatronen (mol)</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_9" name="Spüleinrichtungen">
+              <label for="product-type_9">Spüleinrichtungen</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_10" name="Ventile">
+              <label for="product-type_10">Ventile</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_11" name="Zubehör / Sonstiges">
+              <label for="product-type_11">Zubehör / Sonstiges</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row filter-block">
+          <div class="title-block">
+            <p class="filter-title">Art des Gases</p>
+            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_12" name="Korrosiv">
+              <label for="product-type_12">Korrosiv</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_13" name="Nicht korrosiv">
+              <label for="product-type_13">Nicht korrosiv</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_14" name="Gasgemisch">
+              <label for="product-type_14">Gasgemisch</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_15" name="Toxisch">
+              <label for="product-type_15">Toxisch</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_16" name="Halbleitergase">
+              <label for="product-type_16">Halbleitergase</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" id="product-type_17" name="Medizinische Gase">
+              <label for="product-type_17">Medizinische Gase</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products-catalog">
+        <div class="catalog-search">
+          <div class="row search-input">
+            <input type="text" name="search-product" placeholder="Suchbegriff eingeben">
+            <span class="magnifying-glass"><img src="img/icons/search-white.svg" alt="magnifying glass"></span>
+          </div>
+          <div class="row search-controls">
+            <p class="filter-title">Filter</p>
+            <div class="filter-tag">
+              <p class="tag-name">Gerätetyp: Druckregler</p>
+              <button class="tag-close"><img src="img/icons/tag-close.svg" alt="close"></button>
+            </div>
+            <div class="filter-tag">
+              <p class="tag-name">Art des Gases: Korrosiv</p>
+              <button class="tag-close"><img src="img/icons/tag-close.svg" alt="close"></button>
+            </div>
+            <button href="#" class="filter-clear">Zurücksetzen</button>
+          </div>
+          <div class="row catalog-list">
+            <div class="find-count">
+              <p><span class="bold">20 Ergebnisse</span> von 178 werden angezeigt</p>
+            </div>
+            <div class="products">
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+              <div class="product-wrapper">
+                <div class="image-block">
+                  <img src="img/other-images/product.png" alt="Product" class="product-image">
+                </div>
+                <div class="info-block">
+                  <p class="product-range">Spectrotec</p>
+                  <a href="#" class="product-name">Leitungsdruckregler LT2000</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row catalog-pagination">
+            <ul class="nav-list">
+              <li><a href="#" class="page-link active">1</a></li>
+              <li><a href="#" class="page-link">2</a></li>
+              <li><a href="#" class="page-link">3</a></li>
+              <li><a href="#" class="page-link">4</a></li>
+              <li><a href="#" class="page-link">5</a></li>
+              <li><span class="dots">...</span></li>
+              <li><a href="#" class="page-link">9</a></li>
+              <li><a href="#" class="page-link">10</a></li>
+              <li><a href="#" class="page-link"><img src="img/icons/pagination-1.png" alt="arrow"></a></li>
+              <li><a href="#" class="page-link"><img src="img/icons/pagination-2.png" alt="arrow"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us">
+    <div class="container">
+      <div class="row">
+        <p class="title"><span class="bold">Get in touch with us.</span> We’re happy to help.</p>
+        <a href="#" class="contact-link">Contact our experts</a>
       </div>
     </div>
   </section>
@@ -141,5 +564,12 @@
   <script src="https://kit.fontawesome.com/319240cf71.js" crossorigin="anonymous"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+    $(".filter-block .hide-filter-toggle").on("click", function(event){
+      event.preventDefault();
+      var $parentBlock = $(this).parents(".filter-block"); 
+      $parentBlock.toggleClass("hidden-block");
+    });
+  </script>
 </body>
 </html>
