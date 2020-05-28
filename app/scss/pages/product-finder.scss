@@ -538,11 +538,11 @@ section#products {
 
     div.container {
       div.filter {
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
         z-index: 100;
-        // height: 100%;
+        height: 100%;
         left: -100%;
         transition: left 0.25s;
         padding: 39px 37px 31px 37px ;
@@ -566,6 +566,11 @@ section#products {
 
         div.row.mobile-buttons {
           display: flex;
+        }
+
+        div.filter-list {
+          height: calc(100vh - 200px);
+          overflow-y: scroll;;
         }
       }
 

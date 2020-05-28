@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <filter id="prefix__e" width="112.5%" height="137.5%" x="-6.2%" y="-18.8%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+        </filter>
+        <filter id="prefix__g" width="112.5%" height="137.5%" x="-6.2%" y="-18.8%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius=".5" result="shadowSpreadOuter1"/>
+            <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+        </filter>
+        <path id="prefix__f" d="M0 8H24V16H0z"/>
+        <path id="prefix__h" d="M0 16H24V24H0z"/>
+        <circle id="prefix__a" cx="12" cy="12" r="12"/>
+        <rect id="prefix__c" width="24" height="24" x="0" y="0" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <circle cx="12" cy="12" r="12.5" stroke="#ECECEC"/>
+        <g mask="url(#prefix__b)">
+            <mask id="prefix__d" fill="#fff">
+                <use xlink:href="#prefix__c"/>
+            </mask>
+            <use fill="#FFF" xlink:href="#prefix__c"/>
+            <path fill="#262626" d="M0 0H24V8H0z" mask="url(#prefix__d)"/>
+            <g mask="url(#prefix__d)">
+                <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+                <use fill="#F01515" xlink:href="#prefix__f"/>
+            </g>
+            <g mask="url(#prefix__d)">
+                <use fill="#000" filter="url(#prefix__g)" xlink:href="#prefix__h"/>
+                <use fill="#FFD521" xlink:href="#prefix__h"/>
+            </g>
+        </g>
+    </g>
+</svg>

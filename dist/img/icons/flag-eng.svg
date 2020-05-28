@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <circle id="prefix__a" cx="12" cy="12" r="12"/>
+        <rect id="prefix__c" width="36.4" height="26" x="0" y="0" rx="2"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+        <mask id="prefix__b" fill="#fff">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+        <circle cx="12" cy="12" r="12.5" stroke="#ECECEC"/>
+        <g mask="url(#prefix__b)">
+            <g transform="translate(-6 -1)">
+                <mask id="prefix__d" fill="#fff">
+                    <use xlink:href="#prefix__c"/>
+                </mask>
+                <use fill="#FFF" xlink:href="#prefix__c"/>
+                <path fill="#0A17A7" d="M0 0H36.4V26H0z" mask="url(#prefix__d)"/>
+                <path fill="#FFF" d="M38.067-2.491L40.006.383 27.722 8.667H36.4v8.666h-8.677l12.283 8.284-1.939 2.874-15.534-10.477v9.72h-8.666v-9.721L-1.668 28.49l-1.939-2.874 12.282-8.284H0V8.667h8.677L-3.606.383l1.939-2.874L13.866 7.987v-9.72h8.667v9.719L38.067-2.491z" mask="url(#prefix__d)"/>
+                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667" d="M24.268 8.232L40.733 -2.6" mask="url(#prefix__d)"/>
+                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667" d="M26.017 27.755L40.777 17.807" mask="url(#prefix__d)" transform="matrix(1 0 0 -1 0 45.562)"/>
+                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667" d="M10.407 8.204L-4.989 -2.172" mask="url(#prefix__d)"/>
+                <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667" d="M12.077 29.004L-4.989 17.686" mask="url(#prefix__d)" transform="matrix(1 0 0 -1 0 46.69)"/>
+                <path fill="#E6273E" d="M0 15.6L15.6 15.6 15.6 26 20.8 26 20.8 15.6 36.4 15.6 36.4 10.4 20.8 10.4 20.8 0 15.6 0 15.6 10.4 0 10.4z" mask="url(#prefix__d)"/>
+            </g>
+        </g>
+    </g>
+</svg>

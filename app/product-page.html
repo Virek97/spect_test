@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page - Spectron</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/pages/product-page.min.css">
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="menu-container">
+          <nav id="main-menu">
+            <ul>
+              <li class="menu-item"><a href="product-finder.html" class="active">Product Finder</a></li>
+              <li class="menu-item"><a href="about.html">About</a></li>
+              <li class="menu-item"><a href="#">Trade Shows</a></li>
+              <li class="menu-item"><a href="#">Seminars</a></li>
+              <li class="menu-item"><a href="downloads.html">Downloads</a></li>
+              <li class="menu-item"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <a class="popup-modal search-popup" href="#search-modal">
+            <img src="img/icons/search.svg" alt="search">
+          </a>
+          <div id="search-modal" class="mfp-hide white-popup-block">
+            <div class="row">
+              <form action="#" method="get" id="header-search">
+                <input type="text" name="search" class="search-input" placeholder="Search">
+              </form>
+              <a class="popup-modal-dismiss" href="#"><i class="fas fa-times"></i></a>
+            </div>
+          </div>
+          <span class="selected-language">
+            <p class="language-name">EN</p>
+            <img src="img/icons/language-arrow.svg" alt="arrow" class="arrow">
+            <ul class="select-language">
+              <li><a href="#">UA</a></li>
+              <li><a href="#">RU</a></li>
+              <li><a href="#">BY</a></li>
+            </ul>
+          </span>
+        </div>
+        <nav id="mobile-menu">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <p class="menu-text">Menu</p>
+            <div class="menu-button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="product-info-line">
+    <div class="container">
+      <div class="row">
+        <div class="info-block">
+          <img src="img/other-images/product-page-1.png" alt="Product">
+          <p class="product-name">Spectrolab Panel pressure regulator PM 51</p>
+        </div>
+        <a href="#" class="top-contact-link">Contact our experts</a>
+      </div>
+    </div>
+  </div>
+  <section id="product-info">
+    <div class="container">
+      <div class="row back-link">
+        <a href="product-finder.html">Back to Spectron Product Finder</a>
+      </div>
+      <div class="row main-info">
+        <h1 class="product-name">Spectrolab Panel pressure regulator PM 51</h1>
+        <div class="product-slider">
+          <div class="slide">
+            <img src="img/other-images/product-page-1.png" alt="product">
+          </div>
+          <div class="slide">
+            <img src="img/other-images/product-page-2.png" alt="product">
+          </div>
+        </div>
+      </div>
+      <div class="row info-block">
+        <p class="block-title">Product Features</p>
+        <div class="list-block">
+          <ul class="list-info">
+            <li>
+              <p class="info-text">Brass (chrome plated) panel pressure regulator for panel and panel surface mounting
+              </p>
+            </li>
+            <li>
+              <p class="info-text">For non-corrosive gases and gas mixtures up to quality 6.0</p>
+            </li>
+            <li>
+              <p class="info-text">2, 4 or 6 ports for flexible and individual configuration</p>
+            </li>
+            <li>
+              <p class="info-text">Very stable outlet pressure</p>
+            </li>
+            <li>
+              <p class="info-text">Suitable for inlet pressures up to 300 bar</p>
+            </li>
+            <li>
+              <p class="info-text">Max. outlet pressures 1,5 up to 200 bar</p>
+            </li>
+            <li>
+              <p class="info-text">Metal-to-metal seal to atmosphere</p>
+            </li>
+            <li>
+              <p class="info-text">Suitable for ECD-applications</p>
+            </li>
+            <li>
+              <p class="info-text">Pressure regulator can be evacuated</p>
+            </li>
+            <li>
+              <p class="info-text">Inlet filter</p>
+            </li>
+            <li>
+              <p class="info-text">Approved for use with oxygen</p>
+            </li>
+            <li>
+              <p class="info-text">Simple outlet pressure limitation by handwheel</p>
+            </li>
+            <li>
+              <p class="info-text">Easy to install</p>
+            </li>
+            <li>
+              <p class="info-text">New laboratory-style design</p>
+            </li>
+            <li>
+              <p class="info-text">Ergonomically designed</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="line-section">
+    <div class="container">
+      <div class="row">
+        <img src="img/other-images/spectrolab-logo.png" alt="Logo" class="logo-image">
+        <p class="info-text">Gas supply equipment for non corrosive gases and gas mixtures up to grade 6.0</p>
+      </div>
+    </div>
+  </section>
+  <section id="detailed-info">
+    <div class="container">
+      <div class="row buttons">
+        <button class="title-button active-button" id="show-parameters-block">Technical Data</button>
+        <button class="title-button" id="show-downloads-block">Downloads</button>
+      </div>
+      <div class="product-parameters active-block" id="parameters-block">
+        <div class="row">
+          <div class="info-block">
+            <p class="title">Type</p>
+            <p class="info-text">single-stage</p>
+          </div>
+          <div class="info-block">
+            <p class="title">Valve seat</p>
+            <p class="info-text">PA</p>
+          </div>
+          <div class="info-block">
+            <p class="title">Temperature range</p>
+            <p class="info-text">-30°C to +60°C</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-block">
+            <p class="title">Inlet pressure P</p>
+            <p class="info-text">max. 300 bar</p>
+          </div>
+          <div class="info-block">
+            <p class="title">Diaphragm</p>
+            <p class="info-text">Hastelloy C276</p>
+          </div>
+          <div class="info-block">
+            <p class="title">Leak rate</p>
+            <p class="info-text">(to atmosphere) 1 x 10 mbar l/s He
+              (via seat) 1 x 10 mbar l/s He</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-block">
+            <p class="title">Outlet pressure P</p>
+            <p class="info-text">
+              1,5/4 bar (P1 ≤ 50 bar)<br>
+              10/20/50/100/<br>
+              200 bar (P1 > 50 bar)
+            </p>
+          </div>
+          <div class="info-block">
+            <p class="title">Filter</p>
+            <p class="info-text">Sintered SS 1.4404</p>
+          </div>
+          <div class="info-block">
+            <p class="title">C -value</p>
+            <p class="info-text">0,15</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="info-block">
+            <p class="title">Body regulator</p>
+            <p class="info-text">brass chrome plated</p>
+          </div>
+          <div class="info-block">
+            <p class="title">In- and outlets</p>
+            <p class="info-text">1/4" NPT female</p>
+          </div>
+          <div class="info-block">
+            <p class="title">Weight</p>
+            <p class="info-text">1,1 kg</p>
+          </div>
+        </div>
+      </div>
+      <div class="downloads-info" id="downloads-block">
+        <ul class="downloads-list">
+          <li>
+            <p class="list-title">Data Sheets</p>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-ger.svg" alt="ger">
+              General M51/52 (PDF, 103.5 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-ger.svg" alt="ger">
+              PM51-2 (PDF, 85.5 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-ger.svg" alt="ger">
+              PM51-4 (PDF, 95.8 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-ger.svg" alt="ger">
+              PM51-6 (PDF, 120.1 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-eng.svg" alt="eng">
+              General M51/52 (PDF, 105.1 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-eng.svg" alt="eng">
+              PM51-2 (PDF, 85 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-eng.svg" alt="eng">
+              PM51-4 (PDF, 93.5 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-eng.svg" alt="eng">
+              PM51-6 (PDF, 119.5 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-fra.svg" alt="eng">
+              M51+52 exact (PDF, 2.2 MB)
+            </a>
+          </li>
+        </ul>
+        <ul class="downloads-list">
+          <li>
+            <p class="list-title">Operation Manuals</p>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-ger.svg" alt="ger">
+              M/E51+52+53 (PDF, 452.4 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-eng.svg" alt="eng">
+              M/E51+52+53 (PDF, 425 KB)
+            </a>
+          </li>
+          <li>
+            <a href="#" class="download-link">
+              <img src="img/icons/flag-fra.svg" alt="eng">
+              M/E51+52+53 (PDF, 637.6 KB)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="contact-us">
+    <div class="container">
+      <div class="row">
+        <p class="title"><span class="bold">Questions about the product?</span> Let us know.</p>
+        <a href="#" class="contact-link">Contact our experts</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row top">
+        <p class="company-name">spectron</p>
+        <p class="company-slogan">Gas control on a high level</p>
+      </div>
+      <div class="row center">
+        <div class="column contacts">
+          <div class="contact">
+            <img src="img/icons/phone.svg" alt="Phone">
+            <p>+49 69 38016100</p>
+          </div>
+          <div class="contact">
+            <img src="img/icons/mail.svg" alt="Mail">
+            <p>info@spectron.de</p>
+          </div>
+          <a href="#" class="log-in-link">log in to SpectroVIP</a>
+        </div>
+        <div class="column links">
+          <div class="links-list">
+            <nav class="footer-menu">
+              <ul>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">Product Finder</a></li>
+                <li class="menu-item"><a href="#">Find Your Office</a></li>
+                <li class="menu-item"><a href="#">Contact us</a></li>
+                <li class="menu-item"><a href="#">About us</a></li>
+                <li class="menu-item"><a href="#">Trade Shows</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="links-list">
+            <nav class="footer-menu">
+              <ul>
+                <li class="menu-item"><a href="#">Seminars</a></li>
+                <li class="menu-item"><a href="#">Downloads</a></li>
+                <li class="menu-item"><a href="#">Legal Notice</a></li>
+                <li class="menu-item"><a href="#">Privacy Policy</a></li>
+                <li class="menu-item"><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="column social-media">
+          <p class="title">Follow us</p>
+          <div class="links">
+            <a href="#" class="link"><span class="fab fa-linkedin-in"></span></a>
+            <a href="#" class="link"><span class="fab fa-youtube"></span></a>
+            <a href="#" class="link"><span class="fab fa-facebook-f"></span></a>
+            <a href="#" class="link"><span class="fab fa-instagram"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row bottom">
+        <p class="copyright">© 2020 Spectron Gas Control Systems GmbH</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/319240cf71.js" crossorigin="anonymous"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/index.js"></script>
+
+  <script>
+    $("#show-parameters-block").on("click", function (event) {
+      let $parametersBlock = $("#parameters-block");
+      let $downloadsBlock = $("#downloads-block");
+      let $parametersButton = $("#show-parameters-block");
+      let $downloadsButton = $("#show-downloads-block");
+
+      $parametersBlock.addClass("active-block");
+      $downloadsBlock.removeClass("active-block");
+
+      $parametersButton.addClass("active-button");
+      $downloadsButton.removeClass("active-button");
+    });
+    $("#show-downloads-block").on("click", function (event) {
+      let $parametersBlock = $("#parameters-block");
+      let $downloadsBlock = $("#downloads-block");
+      let $parametersButton = $("#show-parameters-block");
+      let $downloadsButton = $("#show-downloads-block");
+
+      $downloadsBlock.addClass("active-block");
+      $parametersBlock.removeClass("active-block");
+
+      $downloadsButton.addClass("active-button");
+      $parametersButton.removeClass("active-button");
+    });
+
+    $(function () {
+      let hiddenBlock = $("#product-info-line");
+      let header = $("#header")
+      $(window).scroll(function () {
+        var offset = header.offset().top
+        display = $(this).scrollTop() >= (offset + 300);
+
+      if (display) {
+        hiddenBlock.addClass('show');
+      } else {
+        hiddenBlock.removeClass('show');
+      }
+    });
+    });
+
+    // $('.product-slider').slick({
+    //   arrows: false,
+    //   infinite: true,
+    //   dots: true,
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1
+    // });
+  </script>
+</body>
+
+</html>
