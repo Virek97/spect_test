@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="css/pages/product-page.min.css">
 </head>
-
 <body>
   <header id="header">
     <div class="container">
@@ -78,7 +76,10 @@
           <img src="img/other-images/product-page-1.png" alt="Product">
           <p class="product-name">Spectrolab Panel pressure regulator PM 51</p>
         </div>
-        <a href="#" class="top-contact-link">Contact our experts</a>
+        <a href="#" class="top-contact-link">
+          <span class="desktop-text">Contact our experts</span>
+          <span class="mobile-text">Contact us</span>
+        </a>
       </div>
     </div>
   </div>
@@ -90,11 +91,11 @@
       <div class="row main-info">
         <h1 class="product-name">Spectrolab Panel pressure regulator PM 51</h1>
         <div class="product-slider">
-          <div class="slide">
-            <img src="img/other-images/product-page-1.png" alt="product">
+          <div class="slide-block">
+            <div class="image-block"><img src="img/other-images/product-page-1.png" alt="product"></div>
           </div>
-          <div class="slide">
-            <img src="img/other-images/product-page-2.png" alt="product">
+          <div class="slide-block">
+            <div class="image-block"><img src="img/other-images/product-page-2.png" alt="product"></div>
           </div>
         </div>
       </div>
@@ -319,10 +320,14 @@
   <section id="contact-us">
     <div class="container">
       <div class="row">
-        <p class="title"><span class="bold">Questions about the product?</span> Let us know.</p>
+        <p class="title desktop-title"><span class="bold">Questions about the product?</span> Let us know.</p>
+        <p class="title mobile-title"><span class="bold">Get in touch with us.</span> We’re happy to help.</p>
         <a href="#" class="contact-link">Contact our experts</a>
       </div>
     </div>
+  </section>
+  <section id="mobile-back-link">
+    <a href="product-finder.html">Back to Spectron Product Finder</a>
   </section>
   <footer>
     <div class="container">
@@ -420,21 +425,26 @@
         var offset = header.offset().top
         display = $(this).scrollTop() >= (offset + 300);
 
-      if (display) {
-        hiddenBlock.addClass('show');
-      } else {
-        hiddenBlock.removeClass('show');
+        if (display) {
+          hiddenBlock.addClass('show');
+        } else {
+          hiddenBlock.removeClass('show');
+        }
+      });
+    });
+    
+
+    $(function () {
+      if(window.innerWidth <= 600) {
+        $('.product-slider').slick({
+          arrows: false,
+          infinite: true,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
       }
     });
-    });
-
-    // $('.product-slider').slick({
-    //   arrows: false,
-    //   infinite: true,
-    //   dots: true,
-    //   slidesToShow: 1,
-    //   slidesToScroll: 1
-    // });
   </script>
 </body>
 
