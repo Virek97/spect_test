@@ -1,0 +1,202 @@
+@import '../mixins';
+@import '../variables';
+
+
+// SPECTRO VIP
+
+section#spectro-vip {
+  div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 91px 0;
+
+    div.row {
+      justify-content: center;
+      
+      h1.title {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin: 0;
+      }
+    }
+
+    div.form-block {
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin-top: 74px;
+
+      div.input-block {
+        position: relative;
+
+        p.placeholder {
+          font-size: 16px;
+          line-height: 1.38;
+          color: #383838;
+          opacity: 0.8;
+          margin-bottom: 14px;
+        }
+
+        input.text-input {
+          width: 100%;
+          border: 0;
+          border-bottom: 1px solid rgba(56,56,56,0.8);
+          padding: 0 14px 13px 14px;
+          margin-bottom: 42px;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.44;
+        }
+
+        a.password-control{
+          position: absolute;
+          bottom: 57px;
+          right: 15px;
+          display: inline-block;
+          width: 24px;
+          height: 14px;
+          background: url(../../img/icons/view.svg) 0 0 no-repeat;
+        }
+      }
+
+      button.send-form {
+        @include standardButton(300px, #383838, #383838, #ffffff);
+
+        &:hover {
+          background-color: #002570;
+          border: 1px solid #002570;
+          color: #ffffff;
+        }
+      }
+    }
+
+    div.links-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 42px;
+
+      a.account-link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        color: #000000;
+        opacity: 0.8;
+        margin-bottom: 26px;
+        @include transition-hover;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          color: #002570;
+        }
+      }
+
+      div.link-block {
+        display: flex;
+        margin-bottom: 26px;
+
+        p.text {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.33;
+          opacity: 0.8;
+          margin-right: 4px;
+        }
+
+        a.account-link {
+          margin: 0;
+        }
+      }
+    }
+
+    div.form-block.reset-password {
+      margin-top: 53px;
+
+      div.input-block {
+        position: relative;
+
+        p.placeholder {
+          text-align: center;
+          margin-bottom: 42px;
+        }
+      }
+    }
+
+    div.form-block.success-reset {
+      margin-top: 53px;
+
+      div.input-block {
+        position: relative;
+
+        p.placeholder {
+          width: 344px;
+          text-align: center;
+          margin-bottom: 37px;
+        }
+      }
+
+      div.reset-success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 37px;
+
+        p.email-success {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.44;
+          margin-right: 15px;
+        }
+
+        img.success-icon {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section#spectro-vip {
+    div.container {
+      padding: 59px 0;
+  
+      div.row {        
+        h1.title {
+          font-size: 30px;
+          line-height: 1.33;
+          letter-spacing: 0.3px;
+        }
+      }
+
+      div.form-block {
+        width: 256px;
+
+        button.send-form {
+          width: 256px;
+        }
+      }
+
+      div.form-block.success-reset {
+        margin-top: 49px;
+
+        div.input-block {
+          p.placeholder {
+            width: 100%;
+            margin-bottom: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// CLOSE SPECTRO VIP

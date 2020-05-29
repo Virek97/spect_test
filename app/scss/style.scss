@@ -136,6 +136,10 @@ header {
             cursor: default;
             text-align: center;
 
+            &:last-child {
+              border-bottom: 1px solid #383838;
+            }
+
             a {
               font-size: 18px;
               color: #383838;
