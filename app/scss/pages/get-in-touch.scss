@@ -1,0 +1,323 @@
+@import '../mixins';
+@import '../variables';
+
+
+// GET IN TOUCH
+
+section#get-in-touch {
+  background-color: #f3f4f5;
+
+  div.container {
+    padding: 101px 136px 51px 136px;
+
+    div.row {
+      position: relative;
+
+      div.info-block {
+        margin-top: 143px;
+        z-index: 99;
+  
+        h2.title {
+          font-size: 50px;
+          font-weight: bold;
+          line-height: 1.2;
+          letter-spacing: 0.5px;
+          margin: 0 0 0 52px;
+        }
+  
+        div.form-block {
+          width: 100%;
+          max-width: 760px;
+          margin-top: 49px;
+          padding: 49px 62px 68px 52px;
+          background-color: #ffffff;
+
+          form#contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            div.text-inputs {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+
+              input.text-input {
+                width: 100%;
+                max-width: 300px;
+                border: 0;
+                border-bottom: 1px solid rgba(56,56,56,0.8);
+                padding: 0 14px 13px 14px;
+                margin-bottom: 42px;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.44;
+  
+                &::placeholder {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 1.38;
+                  color: #383838;
+                  opacity: 0.8;
+                  margin-bottom: 14px;
+                }
+              }
+            }
+
+            textarea.message {
+              width: 100%;
+              height: 112px;
+              resize: none;
+              margin-bottom: 42px;
+              padding: 17px 19px;
+              background-color: #f3f4f5;
+              border: 0;
+              font-size: 18px;
+              font-weight: bold;
+              line-height: 1.44;
+
+              &::placeholder {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.38;
+                color: #383838;
+                opacity: 0.8;
+              }
+            }
+
+            div#drug-drop {
+              display: flex;
+              align-items: center;
+              background-color: #f3f4f5;
+              padding: 16px 20px 15px 15px;
+
+              img.upload-icon {
+                width: 30px;
+                height: 23px;
+                margin-right: 12px;
+              }
+
+              p.text {
+                font-size: 16px;
+                line-height: 1.38;
+                color: #383838;
+                opacity: 0.8;
+              }
+
+              input#select-file {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+
+                + label {
+                  color: #002570;
+                  text-decoration: underline;
+                  margin-left: 5px;
+                  opacity: 0.8;
+                  cursor: pointer;
+                }
+              }
+            }
+
+            div.privacy-policy {
+              position: relative;
+              margin: 46px 0;
+              padding-left: 46px;
+
+              input[type="checkbox"] {
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+  
+                + label {
+                  font-size: 18px;
+                  line-height: 1.33;
+                  color: rgba(56,56,56,0.8);
+                  cursor: pointer;
+                  @include transition-hover;
+
+                  &::before {
+                    content: '';
+                    width: 32px;
+                    height: 32px;
+                    background-color: #ffffff;
+                    border: 1px solid rgba(56,56,56,0.8);
+                    border-radius: 3px;
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    @include transition-hover;
+                  }
+  
+                  &::after {
+                    content: '\2713';
+                    font-size: 25px;
+                    width: 32px;
+                    height: 32px;
+                    position: absolute;
+                    color: #fff;
+                    top: -4px;
+                    left: 7px;
+                    opacity: 0;
+                    @include transition-hover;
+                  }
+
+                  &:hover {
+                    color: rgba(56,56,56,1);
+                  }
+                }
+  
+                &:checked {
+                  + label {
+                    &::before {
+                      background-color: #383838;
+                    }
+  
+                    &::after {
+                      opacity: 1;
+                    }
+                  }
+                }
+              }
+
+              a.privacy-link {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.33;
+                color: rgba(56,56,56,0.8);
+
+                &:hover {
+                  color: rgba(56,56,56,1);
+                }
+              }
+            }
+
+            button.send-message {
+              @include standardButton(176px, #383838, #383838, #ffffff);
+
+              &:hover {
+                background-color: #002570;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+  
+      div.image-block {
+        width: 52%;
+        max-width: 598px;
+        position: absolute;
+        right: 0;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  section#get-in-touch {
+    div.container {
+      padding: 90px 70px 90px 70px;
+
+      div.row {
+        div.info-block {
+          margin-top: 0;
+
+          h2.title {
+            margin: 0;
+          }
+        }
+
+        div.image-block {
+          position: relative;
+          margin-top: 110px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  section#get-in-touch {
+    div.container {
+      div.row {
+        flex-direction: column;
+
+        div.image-block {
+          width: 100%;
+          max-width: 760px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  section#get-in-touch {
+    div.container {
+      div.row {
+        div.info-block {
+          div.form-block {
+            form#contact-form {
+              div.text-inputs {
+                input.text-input {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section#get-in-touch {
+    div.container {
+      padding: 59px 16px 25px 16px;
+
+      div.row {
+        div.info-block {
+          h2.title {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.33;
+            letter-spacing: 0.3px;
+          }
+
+          div.form-block {
+            margin-top: 25px;
+            padding: 32px 16px 61px 16px;
+
+            form#contact-form {
+              div.text-inputs {
+                input.text-input {
+                  margin-bottom: 40px;
+                }
+              }
+              
+              textarea.message {
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// CLOSE GET IN TOUCH

@@ -22,7 +22,7 @@ section#our-philosophy {
           font-weight: bold;
           line-height: 1.2;
           letter-spacing: 0.5px;
-          margin: 0;
+          margin: 0 0 0 52px;
         }
   
         div.text-block {
@@ -208,7 +208,12 @@ section#our-team {
       div.row {
         div.info-block {
           margin-top: 0;
+
+          h2.title {
+            margin: 0;
+          }
         }
+
         div.image-block {
           position: relative;
           margin-top: 110px;
