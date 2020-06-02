@@ -1,0 +1,311 @@
+@import '../mixins';
+@import '../variables';
+
+
+
+// EXHIBITIONS
+
+section#seminars {
+  div.container {
+    padding: 106px 180px 85px 180px;
+
+    div.title-block {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 739px;
+      margin-bottom: 59px;
+
+      h2.title {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        margin-bottom: 21px;
+      }
+
+      div.links {
+        display: flex;
+        align-items: center;
+
+        p.links-title {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.57;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin-right: 20px;
+        }
+
+        div.links-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          a.link {
+            color: #383838;
+            margin-right: 15px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+            
+            span {
+              width: 40px;
+              height: 40px;
+              border: 2px solid #383838;
+              border-radius: 50%;
+              font-size: 19px;
+              line-height: 38px;
+              color: #383838;
+              text-align: center;
+              @include transition-hover;
+
+              &:hover {
+                color: #032970;
+                border: 2px solid #032970;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div.blocks {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 41px;
+
+      div.block {
+        width: 32.5%;
+        max-width: 346px;
+        background-color: #ffffff;
+        margin-bottom: 21px;
+        overflow: hidden;
+
+        div.img-block {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-height: 194px;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        div.info-block {
+          height: 100%;
+          background-color: #f3f4f5;
+          padding: 25px 18px 41px 18px;
+
+          p.date {
+            font-weight: 600;
+            line-height: 1.38;
+          }
+          p.title {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.3;
+          }
+          p.price {
+            font-weight: 600;
+            line-height: 1.38;
+            margin: 25px 0 35px 0;
+          }
+          p.info-text {
+            line-height: 1.38;
+            margin-bottom: 15px;
+            color: #383838;
+          }
+
+          a.exhibition-button {
+            @include standardButton(224px, #383838, #383838, #ffffff);
+            margin-top: 25px;
+
+            &:hover {
+              background-color: #24449d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section#seminars {
+    div.container {
+      padding: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section#seminars {
+    div.container {
+      padding: 59px 16px 35px 16px;
+
+      div.blocks {
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 3px;
+
+        div.block {
+          width: 49%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  section#seminars {
+    div.container {
+      padding-bottom: 20px;
+      
+      div.title-block {
+        h2.title {
+          font-size: 30px;
+          line-height: 1.33;
+          letter-spacing: 0.3px;
+          margin-bottom: 24px;
+        }
+
+        div.links {
+          flex-direction: column;
+          align-items: flex-start;
+
+          p.links-title {
+            font-size: 14px;
+            line-height: 1.57;
+            letter-spacing: 2px;
+            margin: 0 0 16px 0;
+          }
+        }
+      }
+
+      div.blocks {
+        div.block {
+          width: 100%;
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          div.info-block {
+            background-color: #f3f4f5;
+            padding: 25px 11px 41px 11px;
+
+            p.date {
+              font-size: 14px;
+              line-height: 1.57;
+            }
+            p.title {
+              font-size: 18px;
+              line-height: 1.33;
+              margin-top: 6px;
+            }
+            p.price {
+              font-size: 14px;
+              line-height: 1.57;
+              margin: 25px 0;
+            }
+            p.info-text {
+              font-size: 14px;
+              line-height: 1.57;
+            }
+
+            a.exhibition-button {
+              margin-top: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// CLOSE EXHIBITIONS
+
+
+
+// CONTACT US
+
+section#contact-us {
+  background-color: #002570;
+
+  div.container {
+    padding: 70px 10px;
+
+    div.row {
+      justify-content: center;
+      align-items: center;
+
+      p.title {
+        font-size: 28px;
+        line-height: 1.21;
+        color: #ffffff;
+        text-align: center;
+        margin-right: 64px;
+
+        span.bold {
+          font-weight: bold;
+        }
+      }
+
+      a.contact-link {
+        @include standardButton(213px, #ffffff, #ffffff, #002570);
+
+        &:hover {
+          background-color: #002570;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  section#contact-us {
+    background-color: #002570;
+  
+    div.container {
+      padding: 70px 10px;
+  
+      div.row {
+        flex-direction: column;
+
+        p.title {
+          margin: 0;
+        }
+
+        a.contact-link {
+          margin-top: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section#contact-us {
+    div.container {
+      padding: 74px 16px;
+
+      div.row {
+        p.title {
+          font-size: 22px;
+          line-height: 1.36;
+        }
+
+        a.contact-link {
+          width: 226px;
+        }
+      }
+    }
+  }
+}
+
+// CLOSE CONTACT US

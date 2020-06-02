@@ -174,7 +174,7 @@ section#products-categories {
           }
 
           button.search-button {
-            @include standardButton(173px, #000000, #000000, #ffffff);
+            @include standardButton(173px, #383838, #383838, #ffffff);
             margin-left: 19px;
 
             &:hover {
@@ -421,7 +421,7 @@ section#exhibitions {
       }
 
       a.view-all {
-        @include standardButton(187px, transparent, #000000, #000000);
+        @include standardButton(187px, transparent, #383838, #383838);
 
         &:hover {
           background-color: #24449d;
@@ -479,7 +479,7 @@ section#exhibitions {
           }
 
           a.exhibition-button {
-            @include standardButton(224px, #000000, #000000, #ffffff);
+            @include standardButton(224px, #383838, #383838, #ffffff);
             margin-top: 25px;
 
             &:hover {
@@ -494,7 +494,7 @@ section#exhibitions {
       justify-content: center;
 
       a.view-all {
-        @include standardButton(187px, transparent, #000000, #000000);
+        @include standardButton(187px, transparent, #383838, #383838);
         display: none;
         margin-top: 27px;
   
@@ -553,6 +553,49 @@ section#exhibitions {
   }
 }
 
+@media screen and (max-width: 500px) {
+  section#exhibitions {
+    div.container {
+      div.blocks {
+        div.block {
+          width: 100%;
+          margin-bottom: 25px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          div.info-block {
+            padding: 19px 11px 25px 11px;
+
+            p.date {
+              font-size: 14px;
+              line-height: 1.43;
+            }
+            p.title {
+              font-size: 22px;
+              line-height: 1.45;
+              margin-bottom: 14px;
+            }
+            p.location {
+              font-size: 14px;
+              line-height: 1.43;
+            }
+            p.info-text {
+              font-size: 14px;
+              line-height: 1.43;
+            }
+
+            a.exhibition-button {
+              margin-top: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 346px) {
   section#exhibitions {
     div.container {
@@ -589,7 +632,7 @@ section#seminars {
       }
 
       a.view-all {
-        @include standardButton(187px, transparent, #000000, #000000);
+        @include standardButton(187px, transparent, #383838, #383838);
 
         &:hover {
           background-color: #24449d;
@@ -644,7 +687,7 @@ section#seminars {
           }
 
           a.exhibition-button {
-            @include standardButton(224px, #000000, #000000, #ffffff);
+            @include standardButton(224px, #383838, #383838, #ffffff);
             margin-top: 10px;
 
             &:hover {
@@ -659,7 +702,7 @@ section#seminars {
       justify-content: center;
 
       a.view-all {
-        @include standardButton(187px, transparent, #000000, #000000);
+        @include standardButton(187px, transparent, #383838, #383838);
         display: none;
         margin-top: 30px;
   
