@@ -314,6 +314,331 @@ div#search-modal {
 
 
 
+// CONTACT US
+
+section#contact-us {
+  background-color: #002570;
+
+  div#contact-text-block {
+    display: none;
+    padding: 70px 10px;
+
+    &.active-block {
+      display: block;
+    }
+
+    div.row {
+      justify-content: center;
+      align-items: center;
+
+      p.title {
+        font-size: 28px;
+        line-height: 1.21;
+        color: #ffffff;
+        text-align: center;
+        margin-right: 64px;
+
+        span.bold {
+          font-weight: bold;
+        }
+      }
+
+      button.contact-link {
+        @include standardButton(213px, #ffffff, #ffffff, #002570);
+
+        &:hover {
+          background-color: #002570;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  div#contact-form-block {
+    display: none;
+    padding: 83px 127px 84px 180px;
+    color: #ffffff;
+
+    &.active-block {
+      display: flex;
+    }
+
+    div.text-block {
+      width: 358px;
+      min-width: 358px;
+      margin-right: 129px;
+
+      p.title {
+        width: 226px;
+        font-size: 28px;
+        line-height: 1.21;
+        margin-bottom: 50px;
+
+        span.bold {
+          font-weight: bold;
+        }
+      }
+
+      p.text-info {
+        font-size: 18px;
+        line-height: 1.56;
+      }
+    }
+
+    div.form-block {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 9px;
+
+      div.inputs {
+        display: flex;
+        margin-bottom: 46px;
+
+        div.input-block {
+          width: 300px;
+          position: relative;
+          margin-right: 43px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          p.placeholder {
+            font-size: 16px;
+            line-height: 1.38;
+            color: #f3f4f5;
+            opacity: 0.8;
+            margin-bottom: 14px;
+          }
+  
+          input.text-input {
+            width: 100%;
+            max-width: 300px;
+            border: 0;
+            border-bottom: 1px solid #ffffff;
+            background-color: transparent;
+            padding: 0 14px 13px 14px;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.44;
+            color: #ffffff;
+          }
+        }
+      }
+
+      div.privacy-policy {
+        position: relative;
+        margin: 4px 0;
+        padding-left: 46px;
+
+        input[type="checkbox"] {
+          width: 0.1px;
+          height: 0.1px;
+          opacity: 0;
+          overflow: hidden;
+          position: absolute;
+          z-index: -1;
+
+          + label {
+            font-size: 18px;
+            line-height: 1.33;
+            color: rgba(243,244,245,0.8);
+            cursor: pointer;
+            @include transition-hover;
+
+            &::before {
+              content: '';
+              width: 32px;
+              height: 32px;
+              border: 1px solid rgba(243,244,245,0.8);
+              border-radius: 3px;
+              position: absolute;
+              top: -5px;
+              left: 0;
+              @include transition-hover;
+            }
+
+            &::after {
+              content: '\2713';
+              font-size: 25px;
+              width: 32px;
+              height: 32px;
+              position: absolute;
+              color: #ffffff;
+              top: -4px;
+              left: 7px;
+              opacity: 0;
+              @include transition-hover;
+            }
+
+            &:hover {
+              color: rgba(243,244,245,1);
+            }
+          }
+
+          &:checked {
+            + label {
+              &::after {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        a.privacy-link {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.33;
+          color: rgba(243,244,245,0.8);
+
+          &:hover {
+            color: rgba(243,244,245,1);
+          }
+        }
+      }
+
+      button.send-form {
+        @include standardButton(150px, #ffffff, #ffffff, #383838);
+        margin-top: 46px;
+
+        &:hover {
+          background-color: #002570;
+          border: 1px solid #ffffff;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  section#contact-us {
+    div#contact-form-block {
+      padding: 83px 50px 84px 50px;
+      div.text-block {
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  section#contact-us {
+    div#contact-form-block {
+      flex-direction: column;
+
+      div.text-block {
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+      }
+
+      div.form-block {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  section#contact-us {
+    background-color: #002570;
+  
+    div#contact-text-block {
+      padding: 70px 10px;
+  
+      div.row {
+        flex-direction: column;
+
+        p.title {
+          margin: 0;
+        }
+
+        button.contact-link {
+          margin-top: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  section#contact-us {
+    div#contact-form-block {
+      div.form-block {
+        div.inputs {
+          flex-direction: column;
+          margin-bottom: 0;
+
+          div.input-block {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section#contact-us {
+    div#contact-text-block {
+      padding: 74px 16px;
+
+      div.row {
+        p.title {
+          font-size: 22px;
+          line-height: 1.36;
+        }
+
+        button.contact-link {
+          width: 226px;
+        }
+      }
+    }
+
+    div#contact-form-block {
+      padding: 62px 16px 94px 16px;
+
+      div.text-block {
+        p.title {
+          font-size: 28px;
+          line-height: 1.21;
+          margin-bottom: 32px;
+        }
+
+        p.text-info {
+          font-size: 16px;
+          line-height: 1.63;
+        }
+      }
+
+      div.form-block {
+        margin-top: 65px;
+
+        div.inputs {
+          flex-direction: column;
+          margin-bottom: 0;
+
+          div.input-block {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+        }
+
+        button.send-form {
+          width: 100%;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+// CLOSE CONTACT US
+
+
+
 // FOOTER
 
 footer {

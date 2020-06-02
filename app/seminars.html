@@ -172,10 +172,44 @@
     </div>
   </section>
   <section id="contact-us">
-    <div class="container">
+    <div class="container active-block" id="contact-text-block">
       <div class="row">
         <p class="title"><span class="bold">Get in touch with us.</span> We’re happy to help.</p>
-        <a href="#" class="contact-link">Contact our experts</a>
+        <button class="contact-link" id="show-form-block">Contact our experts</button>
+      </div>
+    </div>
+    <div class="container" id="contact-form-block">
+      <div class="text-block">
+        <p class="title"><span class="bold">Spectronews.</span> Stay up to date.</p>
+        <p class="text-info">Sign up for spectronews and you will get the latest information and interesting facts about people, products and our company. </p>
+      </div>
+      <div class="row form-block">
+        <form action="#">
+          <div class="inputs">
+            <div class="input-block">
+              <p class="placeholder">Email Address</p>
+              <input type="email" name="email" class="text-input" required="">
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="input-block">
+              <p class="placeholder">First Name</p>
+              <input type="text" name="first-name" class="text-input" required="">
+              <a href="#" class="password-control"></a>
+            </div>
+            <div class="input-block">
+              <p class="placeholder">Last Name</p>
+              <input type="text" name="last-name" class="text-input" required="">
+              <a href="#" class="password-control"></a>
+            </div>
+          </div>
+          <div class="privacy-policy">
+            <input type="checkbox" name="checking-privacy" id="checking-privacy">
+            <label for="checking-privacy">I agree with the </label>
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </div>
+          <button class="send-form">Subscribe</button>
+        </form>
       </div>
     </div>
   </section>
@@ -241,5 +275,8 @@
   <script src="https://kit.fontawesome.com/319240cf71.js" crossorigin="anonymous"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/index.js"></script>
+  <script>
+
+  </script>
 </body>
 </html>

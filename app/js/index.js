@@ -10,3 +10,13 @@ $(function () {
 		$.magnificPopup.close();
 	});
 });
+
+$(function () {
+	let $textBlock = $("#contact-text-block");
+	let $formBlock = $("#contact-form-block");
+
+	$("#show-form-block").on("click", function (event) {
+		$formBlock.addClass("active-block");
+		$textBlock.removeClass("active-block");
+	});
+});
