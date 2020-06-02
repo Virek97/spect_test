@@ -489,22 +489,6 @@ section#exhibitions {
         }
       }
     }
-
-    div.bottom-button {
-      justify-content: center;
-
-      a.view-all {
-        @include standardButton(187px, transparent, #383838, #383838);
-        display: none;
-        margin-top: 27px;
-  
-        &:hover {
-          background-color: #24449d;
-          border: 1px solid #24449d;
-          color: #ffffff;
-        }
-      }
-    }
   }
 }
 
@@ -537,16 +521,18 @@ section#exhibitions {
 
 @media screen and (max-width: 720px) {
   section#exhibitions {
+    position: relative;
+
     div.container {
+      padding-bottom: 104px;
+
       div.title-block {
         a.view-all {
-          display: none;
-        }
-      }
-
-      div.bottom-button {
-        a.view-all {
-          display: block;
+          position: absolute;
+          bottom: 35px;
+          left: 0;
+          right: 0;
+          margin: auto;
         }
       }
     }
@@ -604,10 +590,14 @@ section#exhibitions {
           font-size: 25px;
           line-height: 1.4;
         }
-      }
 
-      div.bottom-button {
-        justify-content: flex-start;
+        a.view-all {
+          position: absolute;
+          bottom: 35px;
+          left: 16px;
+          right: 0;
+          margin: 0;
+        }
       }
     }
   }
@@ -697,22 +687,6 @@ section#seminars {
         }
       }
     }
-
-    div.bottom-button {
-      justify-content: center;
-
-      a.view-all {
-        @include standardButton(187px, transparent, #383838, #383838);
-        display: none;
-        margin-top: 30px;
-  
-        &:hover {
-          background-color: #24449d;
-          border: 1px solid #24449d;
-          color: #ffffff;
-        }
-      }
-    }
   }
 }
 
@@ -749,16 +723,18 @@ section#seminars {
 
 @media screen and (max-width: 720px) {
   section#seminars {
+    position: relative;
+
     div.container {
+      padding-bottom: 104px;
+
       div.title-block {
         a.view-all {
-          display: none;
-        }
-      }
-
-      div.bottom-button {
-        a.view-all {
-          display: block;
+          position: absolute;
+          bottom: 35px;
+          left: 0;
+          right: 0;
+          margin: auto;
         }
       }
     }
@@ -814,10 +790,14 @@ section#seminars {
           font-size: 25px;
           line-height: 1.4;
         }
-      }
 
-      div.bottom-button {
-        justify-content: flex-start;
+        a.view-all {
+          position: absolute;
+          bottom: 35px;
+          left: 16px;
+          right: 0;
+          margin: 0;
+        }
       }
     }
   }
