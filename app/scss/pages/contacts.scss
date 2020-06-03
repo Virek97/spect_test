@@ -52,6 +52,10 @@ section#contacts {
               font-size: 18px;
               font-weight: bold;
               line-height: 1.44;
+
+              &::-ms-expand {
+                display: none;
+              }
             }
   
             &:before {
@@ -386,6 +390,7 @@ section#experts {
 
         img.expert-photo {
           position: absolute;
+          top: 0;
           left: 0;
           width: 120px;
           z-index: 2;

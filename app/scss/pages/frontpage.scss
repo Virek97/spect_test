@@ -18,7 +18,7 @@ section#title-container {
       background-color: rgba($marine-blue, 0.88);;
       width: 428px;
       height: 307px;
-      padding: 0 0 44px 34px;
+      padding: 0 10px 44px 34px;
 
       h1.title {
         font-size: 50px;
@@ -449,7 +449,8 @@ section#exhibitions {
           padding: 20px;
 
           img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 306px;
           }
         }
 
