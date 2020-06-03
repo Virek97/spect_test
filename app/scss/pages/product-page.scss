@@ -83,12 +83,8 @@ section#product-info {
           }
 
           div.image-block {
-            display: flex;
-            justify-content: center;
-            width: 270px;
-            
             img {
-              max-width: 100%;
+              max-width: 270px;
             }
           }
         }
