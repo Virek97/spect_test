@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create New Account - Spectron</title>
+  <title>Contact us - Spectron</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/pages/spectro-vip.min.css">
+  <link rel="stylesheet" href="css/pages/get-in-touch.min.css">
 </head>
 <body>
   <div id="select-languages">
@@ -55,7 +55,7 @@
       </a>
     </div>
   </div>
-  <header id="header">
+  <header>
     <div class="container">
       <div class="row">
         <div class="logo">
@@ -66,7 +66,7 @@
         <div class="menu-container">
           <nav id="main-menu">
             <ul>
-              <li class="menu-item"><a href="product-finder.html" >Product Finder</a></li>
+              <li class="menu-item"><a href="#">Product Finder</a></li>
               <li class="menu-item"><a href="about.html">About</a></li>
               <li class="menu-item"><a href="#">Trade Shows</a></li>
               <li class="menu-item"><a href="#">Seminars</a></li>
@@ -106,30 +106,43 @@
       </div>
     </div>
   </header>
-  <section id="spectro-vip">
+  <section id="get-in-touch">
     <div class="container">
       <div class="row">
-        <h1 class="title">Create New Account</h1>
-      </div>
-      <div class="row form-block">
-        <form action="#">
-          <div class="input-block">
-            <p class="placeholder">Enter Email Address</p>
-            <input type="email" name="email" class="text-input" id="email-input" required="">
+        <div class="info-block">
+          <h2 class="title">Get in touch</h2>
+          <div class="form-block">
+            <form action="#" id="contact-form">
+              <div class="text-inputs">
+                <input type="text" name="first-name" class="text-input" placeholder="First Name" required="">
+                <input type="text" name="last-name" class="text-input" placeholder="Last Name" required="">
+                <input type="email" name="email" class="text-input" placeholder="Email Address" required="">
+              </div>
+              <textarea name="message" class="message" placeholder="Leave us a message"></textarea>
+              <div class="text-inputs">
+                <input type="text" name="phone-number" class="text-input" placeholder="Phone Number (optional)">
+                <input type="text" name="company" class="text-input" placeholder="Company (optional)">
+                <input type="text" name="postal-code" class="text-input" placeholder="Postal Code (optional)">
+                <input type="text" name="city" class="text-input" placeholder="City (optional)">
+                <input type="text" name="country" class="text-input" placeholder="Country (optional)">
+              </div>
+              <div id="drug-drop">
+                <img src="img/icons/upload-icon.svg" alt="upload" class="upload-icon">
+                <p class="text">Drag + drop images / videos here or</p>
+                <input type="file" name="file" id="select-file">
+                <label for="select-file">browse</label>
+              </div>
+              <div class="privacy-policy">
+                <input type="checkbox" name="checking-privacy" id="checking-privacy">
+                <label for="checking-privacy">I agree with the </label>
+                <a href="#" class="privacy-link">Privacy Policy</a>
+              </div>
+              <button class="send-message">Send Message</button>
+            </form>
           </div>
-          <div class="input-block">
-            <p class="placeholder">Create Password</p>
-            <input type="password" name="password" class="text-input" id="password-input" required="">
-            <a href="#" class="password-control"></a>
-          </div>
-          <button class="send-form">Create Your Account</button>
-        </form>
-        <div class="links-block">
-          <div class="link-block">
-            <p class="text">Already a Member?</p>
-            <a href="#" class="account-link">Log In</a>
-          </div>
-          <a href="#" class="account-link">Forgot Password</a>
+        </div>
+        <div class="image-block">
+          <img src="img/other-images/get-in-touch.jpg" alt="philosophy">
         </div>
       </div>
     </div>
@@ -143,11 +156,11 @@
       <div class="row center">
         <div class="column contacts">
           <div class="contact">
-            <img src="img/icons/phone.svg" alt="Phone">
+            <img src="img/icons/phone.svg" alt="Phone"> 
             <p>+49 69 38016100</p>
           </div>
           <div class="contact">
-            <img src="img/icons/mail.svg" alt="Mail">
+            <img src="img/icons/mail.svg" alt="Mail"> 
             <p>info@spectron.de</p>
           </div>
           <a href="#" class="log-in-link">log in to SpectroVIP</a>

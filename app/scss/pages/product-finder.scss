@@ -26,13 +26,13 @@ section#products {
           font-weight: bold;
           line-height: 1.25;
           letter-spacing: 0.5px;
-          color: #383838;
+          color: $blackColor;
         }
 
         button.filter-clear {
           font-size: 14px;
           letter-spacing: 1px;
-          color: #383838;
+          color: $blackColor;
           background-color: transparent;
           border: 0;
           text-decoration: underline;
@@ -107,7 +107,7 @@ section#products {
               &:checked {
                 + label {
                   &::before {
-                    background-color: #383838;
+                    background-color: $blackColor;
                   }
 
                   &::after {
@@ -120,7 +120,7 @@ section#products {
             label {
               font-size: 14px;
               letter-spacing: 1px;
-              color: #383838;
+              color: $blackColor;
               padding-left: 21px;
               cursor: pointer;
 
@@ -131,49 +131,49 @@ section#products {
 
             label#tec {
               &::before {
-                background-color: #636363;
+                background-color: $spectroTecColor;
               }
             }
             label#com {
               &::before {
-                background-color: #599aa9;
+                background-color: $spectroComColor;
               }
             }
             label#lab {
               &::before {
-                background-color: #008483;
+                background-color: $spectroLabColor;
               }
             }
             label#cem {
               &::before {
-                background-color: #1669ad;
+                background-color: $spectroCemColor;
               }
             }
             label#pur {
               &::before {
-                background-color: #883898;
+                background-color: $spectroPurColor;
               }
             }
             label#med {
               &::before {
-                background-color: #6bc5d5;
+                background-color: $spectroMedColor;
               }
             }
             label#sys {
               &::before {
-                background-color: #b0c1e1;
+                background-color: $spectroSysColor;
               }
             }
             label#mol {
               &::before {
-                background-color: #24449d;
+                background-color: $spectroMolColor;
               }
             }
           }
         }
 
         button.apply-changes {
-          @include standardButton(207px, #383838, #383838, #ffffff);
+          @include standardButton(207px, $blackColor, $blackColor, #ffffff);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -197,7 +197,7 @@ section#products {
               left: 7px;
               width: 20px;
               height: 1px;
-              background-color: #383838;
+              background-color: $blackColor;
             }
 
             &::after {
@@ -207,8 +207,8 @@ section#products {
               right: 8px;
               width: 8px;
               height: 8px;
-              border-top: 1px solid #383838;
-              border-right: 1px solid #383838;
+              border-top: 1px solid $blackColor;
+              border-right: 1px solid $blackColor;
               transform: rotate(45deg);
             }
           }
@@ -270,14 +270,14 @@ section#products {
             font-size: 16px;
             font-weight: 600;
             line-height: 1.63;
-            color: #383838;
+            color: $blackColor;
           }
         }
 
         span.magnifying-glass {
           width: 60px;
           height: 60px;
-          background-color: #002570;
+          background-color: $marine-blue;
           padding: 17px;
 
           img {
@@ -296,14 +296,14 @@ section#products {
           font-weight: bold;
           line-height: 1.25;
           letter-spacing: 0.5px;
-          color: #383838;
+          color: $blackColor;
           margin-right: 18px;
         }
 
         button.filter-clear {
           font-size: 14px;
           letter-spacing: 1px;
-          color: #383838;
+          color: $blackColor;
           background-color: transparent;
           border: 0;
           text-decoration: underline;
@@ -331,7 +331,7 @@ section#products {
             font-size: 11px;
             line-height: 1;
             letter-spacing: 0.5px;
-            color: #383838;
+            color: $blackColor;
           }
 
           button.tag-close {
@@ -356,7 +356,7 @@ section#products {
           font-size: 14px;
           line-height: 1.29;
           letter-spacing: 1px;
-          color: #383838;
+          color: $blackColor;
           white-space: pre-wrap;
         }
 
@@ -375,7 +375,7 @@ section#products {
             font-size: 12px;
             line-height: 1.67;
             letter-spacing: 0.5px;
-            color: #383838;
+            color: $blackColor;
 
             span.bold {
               font-weight: bold;
@@ -414,7 +414,7 @@ section#products {
                 font-size: 12px;
                 line-height: 1.67;
                 letter-spacing: 2.57px;
-                color: #383838;
+                color: $blackColor;
                 text-transform: uppercase;
               }
 
@@ -447,7 +447,7 @@ section#products {
           li {
             font-size: 12px;
             line-height: 1.67;
-            color: #002570;
+            color: $marine-blue;
 
             a.page-link {
               display: flex;
@@ -456,7 +456,7 @@ section#products {
               width: 30px;
               height: 30px;
               text-decoration: none;
-              color: #002570;
+              color: $marine-blue;
 
               &:hover {
                 text-decoration: underline;
@@ -464,13 +464,13 @@ section#products {
                 > img {
                   margin-top: 3px;
                   padding-bottom: 1px;
-                  border-bottom: 1px solid #002570;
+                  border-bottom: 1px solid $marine-blue;
                 }
               }
             }
 
             a.page-link.active {
-              border: 1px solid #002570;
+              border: 1px solid $marine-blue;
               border-radius: 50%;
             }
 

@@ -148,7 +148,7 @@ header {
               @include transition-hover;
 
               &:hover {
-                background-color: #002570;
+                background-color: $marine-blue;
                 color: #ffffff;
               }
             }
@@ -195,12 +195,12 @@ header {
 
       &:hover {
         p.menu-name {
-          color: #002570;
+          color: $marine-blue;
         }
         
         div.lines {        
           span {
-            background-color: #002570;
+            background-color: $marine-blue;
           }
         }
       }
@@ -246,6 +246,7 @@ div#search-modal {
   }
 }
 
+// MOBILE NAV BLOCK
 div#mobile-menu {
   display: flex;
   flex-direction: column;
@@ -315,7 +316,7 @@ div#mobile-menu {
           }
 
           &:hover {
-            color: #002570;
+            color: $marine-blue;
           }
         }
       }
@@ -365,6 +366,7 @@ div#mobile-menu {
   }
 }
 
+// SELECT LANGUAGES BLOCK
 div#select-languages {
   display: flex;
   flex-direction: column;
@@ -508,7 +510,7 @@ div#select-languages {
 // CONTACT US
 
 section#contact-us {
-  background-color: #002570;
+  background-color: $marine-blue;
 
   div#contact-text-block {
     display: none;
@@ -535,10 +537,10 @@ section#contact-us {
       }
 
       button.contact-link {
-        @include standardButton(213px, #ffffff, #ffffff, #002570);
+        @include standardButton(213px, #ffffff, #ffffff, $marine-blue);
 
         &:hover {
-          background-color: #002570;
+          background-color: $marine-blue;
           color: #ffffff;
         }
       }
@@ -694,7 +696,7 @@ section#contact-us {
         margin-top: 46px;
 
         &:hover {
-          background-color: #002570;
+          background-color: $marine-blue;
           border: 1px solid #ffffff;
           color: #ffffff;
         }
@@ -734,7 +736,7 @@ section#contact-us {
 
 @media screen and (max-width: 870px) {
   section#contact-us {
-    background-color: #002570;
+    background-color: $marine-blue;
   
     div#contact-text-block {
       padding: 70px 10px;
@@ -895,7 +897,7 @@ footer {
           margin-top: 38px;
 
           &:hover {
-            background-color: #002570;
+            background-color: $marine-blue;
             color: #ffffff;
           }
         }

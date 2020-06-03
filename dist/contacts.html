@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Create New Account - Spectron</title>
+  <title>Contact us - Spectron</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/pages/spectro-vip.min.css">
+  <link rel="stylesheet" href="css/pages/contacts.min.css">
 </head>
 <body>
   <div id="select-languages">
@@ -55,7 +55,7 @@
       </a>
     </div>
   </div>
-  <header id="header">
+  <header>
     <div class="container">
       <div class="row">
         <div class="logo">
@@ -66,7 +66,7 @@
         <div class="menu-container">
           <nav id="main-menu">
             <ul>
-              <li class="menu-item"><a href="product-finder.html" >Product Finder</a></li>
+              <li class="menu-item"><a href="#">Product Finder</a></li>
               <li class="menu-item"><a href="about.html">About</a></li>
               <li class="menu-item"><a href="#">Trade Shows</a></li>
               <li class="menu-item"><a href="#">Seminars</a></li>
@@ -106,34 +106,150 @@
       </div>
     </div>
   </header>
-  <section id="spectro-vip">
-    <div class="container">
-      <div class="row">
-        <h1 class="title">Create New Account</h1>
-      </div>
-      <div class="row form-block">
-        <form action="#">
-          <div class="input-block">
-            <p class="placeholder">Enter Email Address</p>
-            <input type="email" name="email" class="text-input" id="email-input" required="">
+  <div class="wrapper">
+    <section id="contacts">
+      <div class="container">
+        <h2 class="title">Contact us</h2>
+        <div class="row contacts-info">
+          <div class="column select-block">
+            <p class="title-block">Select your country</p>
+            <div class="select-wrapper">
+              <select name="country" id="select-country">
+                <option value="Germany">Germany</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="USA">USA</option>
+              </select>
+            </div>
           </div>
-          <div class="input-block">
-            <p class="placeholder">Create Password</p>
-            <input type="password" name="password" class="text-input" id="password-input" required="">
-            <a href="#" class="password-control"></a>
+          <div class="column address-block">
+            <p class="title-block">Spectron Gas Control Systems GmbH</p>
+            <p class="text-info">
+              Fritz-Klatte-Str. 8<br>
+              65933 Frankfurt am Main
+            </p>
+            <a href="#" class="send-message">Send us a message</a>
           </div>
-          <button class="send-form">Create Your Account</button>
-        </form>
-        <div class="links-block">
-          <div class="link-block">
-            <p class="text">Already a Member?</p>
-            <a href="#" class="account-link">Log In</a>
+          <div class="column contact-block">
+            <div class="info-block">
+              <img src="img/icons/phone.svg" alt="phone" class="icon">
+              <p class="text-info">+49 69 38016226</p>
+            </div>
+            <div class="info-block">
+              <img src="img/icons/fax.png" alt="phone" class="icon">
+              <p class="text-info">+49 69 38016200</p>
+            </div>
+            <div class="info-block">
+              <img src="img/icons/mail.svg" alt="phone" class="icon">
+              <p class="text-info">info@spectron.de</p>
+            </div>
           </div>
-          <a href="#" class="account-link">Forgot Password</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    <section id="links-section">
+      <div class="container">
+        <div class="row">
+          <p class="title">Maybe the answer can be found here</p>
+          <div class="links-block">
+            <a href="#" class="link">Product Finder</a>
+            <a href="#" class="link">Fairs & Exhibitions</a>
+            <a href="#" class="link">Seminars</a>
+            <a href="#" class="link">Careers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experts">
+      <div class="container">
+        <h3 class="title">Your experts in Germany</h3>
+        <div class="row experts-blocks">
+          <div class="titles-block">
+            <p class="title">Name</p>
+            <p class="title">Phone</p>
+            <p class="title">Mobile</p>
+            <p class="title">Fax</p>
+            <p class="title">Email</p>
+          </div>
+          <div class="expert-block">
+            <img src="img/other-images/expert-1.png" alt="Expert" class="expert-photo">
+            <div class="expert-info">
+              <div class="info-block">
+                <p class="title-text">Name</p>
+                <p class="text-info expert-name">Dietmar Reinicke</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Phone</p>
+                <p class="text-info">+49 3305 689704</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Mobile</p>
+                <p class="text-info">+49 151 52758 073</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Fax</p>
+                <p class="text-info">+49 3305 689705</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Email</p>
+                <a href="#"><img src="img/icons/mail.svg" alt="Mail"></a>
+              </div>
+            </div>
+          </div>
+          <div class="expert-block">
+            <img src="img/other-images/expert-2.png" alt="Expert" class="expert-photo">
+            <div class="expert-info">
+              <div class="info-block">
+                <p class="title-text">Name</p>
+                <p class="text-info expert-name">Franziska Schmidt</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Phone</p>
+                <p class="text-info">+49 3305 689704</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Mobile</p>
+                <p class="text-info">+49 151 52758 073</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Fax</p>
+                <p class="text-info">+49 3305 689705</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Email</p>
+                <a href="#"><img src="img/icons/mail.svg" alt="Mail"></a>
+              </div>
+            </div>
+          </div>
+          <div class="expert-block">
+            <img src="img/other-images/expert-3.png" alt="Expert" class="expert-photo">
+            <div class="expert-info">
+              <div class="info-block">
+                <p class="title-text">Name</p>
+                <p class="text-info expert-name">Urban Steinmetz</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Phone</p>
+                <p class="text-info">+49 3305 689704</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Mobile</p>
+                <p class="text-info">+49 151 52758 073</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Fax</p>
+                <p class="text-info">+49 3305 689705</p>
+              </div>
+              <div class="info-block">
+                <p class="title-text">Email</p>
+                <a href="#"><img src="img/icons/mail.svg" alt="Mail"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <footer>
     <div class="container">
       <div class="row top">
@@ -143,11 +259,11 @@
       <div class="row center">
         <div class="column contacts">
           <div class="contact">
-            <img src="img/icons/phone.svg" alt="Phone">
+            <img src="img/icons/phone.svg" alt="Phone"> 
             <p>+49 69 38016100</p>
           </div>
           <div class="contact">
-            <img src="img/icons/mail.svg" alt="Mail">
+            <img src="img/icons/mail.svg" alt="Mail"> 
             <p>info@spectron.de</p>
           </div>
           <a href="#" class="log-in-link">log in to SpectroVIP</a>

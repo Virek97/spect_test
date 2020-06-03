@@ -57,7 +57,7 @@ section#get-in-touch {
                   font-size: 16px;
                   font-weight: 400;
                   line-height: 1.38;
-                  color: #383838;
+                  color: $blackColor;
                   opacity: 0.8;
                   margin-bottom: 14px;
                 }
@@ -80,7 +80,7 @@ section#get-in-touch {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1.38;
-                color: #383838;
+                color: $blackColor;
                 opacity: 0.8;
               }
             }
@@ -100,7 +100,7 @@ section#get-in-touch {
               p.text {
                 font-size: 16px;
                 line-height: 1.38;
-                color: #383838;
+                color: $blackColor;
                 opacity: 0.8;
               }
 
@@ -113,7 +113,7 @@ section#get-in-touch {
                 z-index: -1;
 
                 + label {
-                  color: #002570;
+                  color: $marine-blue;
                   text-decoration: underline;
                   margin-left: 5px;
                   opacity: 0.8;
@@ -176,7 +176,7 @@ section#get-in-touch {
                 &:checked {
                   + label {
                     &::before {
-                      background-color: #383838;
+                      background-color: $blackColor;
                     }
   
                     &::after {
@@ -199,10 +199,10 @@ section#get-in-touch {
             }
 
             button.send-message {
-              @include standardButton(176px, #383838, #383838, #ffffff);
+              @include standardButton(176px, $blackColor, $blackColor, #ffffff);
 
               &:hover {
-                background-color: #002570;
+                background-color: $marine-blue;
                 color: #ffffff;
               }
             }

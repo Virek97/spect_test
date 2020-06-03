@@ -166,7 +166,7 @@ section#our-team {
           p.info-text {
             font-size: 18px;
             line-height: 1.56;
-            color: #383838;
+            color: $blackColor;
           }
   
           p.info-text.bold {
@@ -176,7 +176,7 @@ section#our-team {
           }
 
           a.link {
-            @include standardButton(275px, #383838, #383838, #ffffff);
+            @include standardButton(275px, $blackColor, $blackColor, #ffffff);
             display: flex;
             justify-content: center;
             margin-top: 49px;

@@ -43,7 +43,7 @@ section#seminars {
           align-items: center;
 
           a.link {
-            color: #383838;
+            color: $blackColor;
             margin-right: 15px;
 
             &:last-child {
@@ -53,11 +53,11 @@ section#seminars {
             span {
               width: 40px;
               height: 40px;
-              border: 2px solid #383838;
+              border: 2px solid $blackColor;
               border-radius: 50%;
               font-size: 19px;
               line-height: 38px;
-              color: #383838;
+              color: $blackColor;
               text-align: center;
               @include transition-hover;
 
@@ -116,11 +116,11 @@ section#seminars {
           p.info-text {
             line-height: 1.38;
             margin-bottom: 15px;
-            color: #383838;
+            color: $blackColor;
           }
 
           a.exhibition-button {
-            @include standardButton(224px, #383838, #383838, #ffffff);
+            @include standardButton(224px, $blackColor, $blackColor, #ffffff);
             margin-top: 25px;
 
             &:hover {

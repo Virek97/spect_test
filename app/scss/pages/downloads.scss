@@ -8,7 +8,7 @@
 // BLUE SECTION
 
 section.blue-section {
-  background-color: #002570;
+  background-color: $marine-blue;
 
   div.container {
     padding: 66px 0;
@@ -30,10 +30,10 @@ section.blue-section {
       }
 
       a.contact-link {
-        @include standardButton(235px, #ffffff, #ffffff, #002570);
+        @include standardButton(235px, #ffffff, #ffffff, $marine-blue);
 
         &:hover {
-          background-color: #002570;
+          background-color: $marine-blue;
           color: #ffffff;
         }
       }
@@ -91,7 +91,7 @@ section#downloads {
           p.list-title {
             font-size: 18px;
             line-height: 1.56;
-            color: #383838;
+            color: $blackColor;
           }
 
           a.download-link {
@@ -133,7 +133,7 @@ section#downloads {
           p {
             font-size: 18px;
             line-height: 1.56;
-            color: #383838;
+            color: $blackColor;
           }
 
           p.top-text {

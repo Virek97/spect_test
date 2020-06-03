@@ -15,7 +15,7 @@ section#title-container {
       display: flex;
       align-items: flex-end;
       height: 300px;
-      background-color: rgba(#002570, 0.88);;
+      background-color: rgba($marine-blue, 0.88);;
       width: 428px;
       height: 307px;
       padding: 0 0 44px 34px;
@@ -110,30 +110,30 @@ section#products-categories {
           }
 
           a#tec {
-            background-color: #636363;
+            background-color: $spectroTecColor;
           }
           a#com {
-            background-color: #599aa9;
+            background-color: $spectroComColor;
           }
           a#lab {
-            background-color: #008483;
+            background-color: $spectroLabColor;
           }
           a#cem {
-            background-color: #1669ad;
+            background-color: $spectroCemColor;
           }
           a#pur {
-            background-color: #883898;
+            background-color: $spectroPurColor;
           }
           a#med {
-            background-color: #6bc5d5;
-            color: #383838;
+            background-color: $spectroMedColor;
+            color: $blackColor;
           }
           a#sys {
-            background-color: #b0c1e1;
-            color: #383838;
+            background-color: $spectroSysColor;
+            color: $blackColor;
           }
           a#mol {
-            background-color: #24449d;
+            background-color: $spectroMolColor;
           }
         }
       }
@@ -174,7 +174,7 @@ section#products-categories {
           }
 
           button.search-button {
-            @include standardButton(173px, #383838, #383838, #ffffff);
+            @include standardButton(173px, $blackColor, $blackColor, #ffffff);
             margin-left: 19px;
 
             &:hover {
@@ -361,7 +361,7 @@ section#products-categories {
       div.categories {
         div.category {
           width: 100%;
-          background: #002570;
+          background: $marine-blue;
           height: 64px;
         }
       }
@@ -377,7 +377,7 @@ section#products-categories {
       div.categories {
         div.category {
           width: 100%;
-          background: #002570;
+          background: $marine-blue;
           height: 64px;
           margin: 0 0 10px 0;
 
@@ -421,7 +421,7 @@ section#exhibitions {
       }
 
       a.view-all {
-        @include standardButton(187px, transparent, #383838, #383838);
+        @include standardButton(187px, transparent, $blackColor, $blackColor);
 
         &:hover {
           background-color: #24449d;
@@ -475,11 +475,11 @@ section#exhibitions {
             margin-top: 25px;
             max-height: 70px;
             overflow: hidden;
-            color: #383838;
+            color: $blackColor;
           }
 
           a.exhibition-button {
-            @include standardButton(224px, #383838, #383838, #ffffff);
+            @include standardButton(224px, $blackColor, $blackColor, #ffffff);
             margin-top: 25px;
 
             &:hover {
@@ -622,7 +622,7 @@ section#seminars {
       }
 
       a.view-all {
-        @include standardButton(187px, transparent, #383838, #383838);
+        @include standardButton(187px, transparent, $blackColor, $blackColor);
 
         &:hover {
           background-color: #24449d;
@@ -673,11 +673,11 @@ section#seminars {
           p.info-text {
             line-height: 1.38;
             margin-bottom: 15px;
-            color: #383838;
+            color: $blackColor;
           }
 
           a.exhibition-button {
-            @include standardButton(224px, #383838, #383838, #ffffff);
+            @include standardButton(224px, $blackColor, $blackColor, #ffffff);
             margin-top: 10px;
 
             &:hover {

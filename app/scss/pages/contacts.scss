@@ -34,7 +34,7 @@ section#contacts {
           p.title-block {
             font-size: 16px;
             line-height: 1.38;
-            color: #383838;
+            color: $blackColor;
             opacity: 0.8;
           }
 
@@ -83,12 +83,12 @@ section#contacts {
           p.text-info {
             font-size: 18px;
             line-height: 1.44;
-            color: #383838;
+            color: $blackColor;
             margin: 12px 0 25px 0;
           }
 
           a.send-message {
-            @include standardButton(208px, #383838, #383838, #ffffff);
+            @include standardButton(208px, $blackColor, $blackColor, #ffffff);
 
             &:hover {
               background-color: #24449d;
@@ -242,7 +242,7 @@ section#links-section {
           text-align: center;
           text-transform: uppercase;
           text-decoration: none;
-          color: #383838;
+          color: $blackColor;
           @include transition-hover;
 
           &:last-child {
@@ -359,7 +359,7 @@ section#experts {
           font-weight: bold;
           line-height: 1.67;
           letter-spacing: 0.5px;
-          color: #383838;
+          color: $blackColor;
   
           &:nth-child(1) { margin-right: 56px; }
           &:nth-child(2) { margin-right: 58px; }
@@ -421,7 +421,7 @@ section#experts {
               font-weight: bold;
               line-height: 1.67;
               letter-spacing: 0.5px;
-              color: #383838;
+              color: $blackColor;
             }
 
             p.text-info {

@@ -36,7 +36,7 @@ section#spectro-vip {
         p.placeholder {
           font-size: 16px;
           line-height: 1.38;
-          color: #383838;
+          color: $blackColor;
           opacity: 0.8;
           margin-bottom: 14px;
         }
@@ -64,11 +64,11 @@ section#spectro-vip {
       }
 
       button.send-form {
-        @include standardButton(300px, #383838, #383838, #ffffff);
+        @include standardButton(300px, $blackColor, $blackColor, #ffffff);
 
         &:hover {
-          background-color: #002570;
-          border: 1px solid #002570;
+          background-color: $marine-blue;
+          border: 1px solid $marine-blue;
           color: #ffffff;
         }
       }
@@ -94,7 +94,7 @@ section#spectro-vip {
         }
 
         &:hover {
-          color: #002570;
+          color: $marine-blue;
         }
       }
 

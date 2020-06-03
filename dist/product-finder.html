@@ -9,6 +9,52 @@
   <link rel="stylesheet" href="css/pages/product-finder.min.css">
 </head>
 <body>
+  <div id="select-languages">
+    <div class="row close-block">
+      <button class="close-button" id="close-languages">Close <img src="img/icons/white-close.png" alt="close"></button>
+    </div>
+    <div class="row languages-list">
+      <a href="#" class="language-link">English</a>
+      <a href="#" class="language-link">Spanish</a>
+      <a href="#" class="language-link">Hindi</a>
+      <a href="#" class="language-link">Bengali</a>
+      <a href="#" class="language-link">Portuguese</a>
+      <a href="#" class="language-link">Ukrainian</a>
+      <a href="#" class="language-link">Japanese</a>
+      <a href="#" class="language-link">Polish</a>
+      <a href="#" class="language-link">Korean</a>
+      <a href="#" class="language-link">French</a>
+      <a href="#" class="language-link">German</a>
+      <a href="#" class="language-link">Bengali</a>
+      <a href="#" class="language-link">Portuguese</a>
+      <a href="#" class="language-link">Ukrainian</a>
+    </div>
+  </div>
+  <div id="mobile-menu">
+    <div class="row close-block">
+      <button class="close-button" id="close-menu">Close <img src="img/icons/filter-close.svg" alt="close"></button>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li class="menu-item"><a href="#" class="menu-link active-link">Home</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Product Finder</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Trade Shows</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Seminars</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Downloads</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="bottom-buttons">
+      <button id="show-languages">
+        <p class="language-code">EN</p>
+        <img src="img/icons/mobile-menu-arrow.svg" alt="arrow" class="lang-arrow">
+      </button>
+      <a class="popup-modal search-popup" href="#search-modal">
+        <img src="img/icons/search.svg" alt="search" class="glass">
+      </a>
+    </div>
+  </div>
   <header>
     <div class="container">
       <div class="row">
@@ -49,23 +95,14 @@
             </ul>
           </span>
         </div>
-        <nav id="mobile-menu">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <p class="menu-text">Menu</p>
-            <div class="menu-button">
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
+        <div id="menu-toggle">
+          <p class="menu-name">Menu</p>
+          <div class="lines">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -78,125 +115,127 @@
             <button href="#" class="filter-clear">Zurücksetzen</button>
           </div>
         </div>
-        <div class="row filter-block">
-          <div class="title-block">
-            <p class="filter-title">Produktbereich</p>
-            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+        <div class="filter-list">
+          <div class="row filter-block">
+            <div class="title-block">
+              <p class="filter-title">Produktbereich</p>
+              <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+            </div>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_0" name="spectrotec">
+                <label for="product-type_0" id="tec">spectro<span class="bold">tec</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_1" name="spectrocom">
+                <label for="product-type_1" id="com">spectro<span class="bold">com</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_18" name="spectrolab">
+                <label for="product-type_18" id="lab">spectro<span class="bold">lab</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_19" name="spectrocem">
+                <label for="product-type_19" id="cem">spectro<span class="bold">cem</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_20" name="spectropur">
+                <label for="product-type_20" id="pur">spectro<span class="bold">pur</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_21" name="spectromed">
+                <label for="product-type_21" id="med">spectro<span class="bold">med</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_22" name="spectrosys">
+                <label for="product-type_22" id="sys">spectro<span class="bold">sys</span></label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_23" name="spectromol">
+                <label for="product-type_23" id="mol">spectro<span class="bold">mol</span></label>
+              </li>
+            </ul>
           </div>
-          <ul class="filter-list">
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_0" name="spectrotec">
-              <label for="product-type_0" id="tec">spectro<span class="bold">tec</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_1" name="spectrocom">
-              <label for="product-type_1" id="com">spectro<span class="bold">com</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_18" name="spectrolab">
-              <label for="product-type_18" id="lab">spectro<span class="bold">lab</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_19" name="spectrocem">
-              <label for="product-type_19" id="cem">spectro<span class="bold">cem</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_20" name="spectropur">
-              <label for="product-type_20" id="pur">spectro<span class="bold">pur</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_21" name="spectromed">
-              <label for="product-type_21" id="med">spectro<span class="bold">med</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_22" name="spectrosys">
-              <label for="product-type_22" id="sys">spectro<span class="bold">sys</span></label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_23" name="spectromol">
-              <label for="product-type_23" id="mol">spectro<span class="bold">mol</span></label>
-            </li>
-          </ul>
-        </div>
-        <div class="row filter-block">
-          <div class="title-block">
-            <p class="filter-title">Gerätetyp</p>
-            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+          <div class="row filter-block">
+            <div class="title-block">
+              <p class="filter-title">Gerätetyp</p>
+              <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+            </div>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_2" name="Alarm- / Steuereinheiten">
+                <label for="product-type_2">Alarm- / Steuereinheiten</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_3" name="Druckregler">
+                <label for="product-type_3">Druckregler</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_4" name="Entnahmestellen">
+                <label for="product-type_4">Entnahmestellen</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_5" name="Entspannungsstationen">
+                <label for="product-type_5">Entspannungsstationen</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_6" name="Filter">
+                <label for="product-type_6">Filter</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_7" name="Kontaktmanometer">
+                <label for="product-type_7">Kontaktmanometer</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_8" name="Reinigungspatronen (mol)">
+                <label for="product-type_8">Reinigungspatronen (mol)</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_9" name="Spüleinrichtungen">
+                <label for="product-type_9">Spüleinrichtungen</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_10" name="Ventile">
+                <label for="product-type_10">Ventile</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_11" name="Zubehör / Sonstiges">
+                <label for="product-type_11">Zubehör / Sonstiges</label>
+              </li>
+            </ul>
           </div>
-          <ul class="filter-list">
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_2" name="Alarm- / Steuereinheiten">
-              <label for="product-type_2">Alarm- / Steuereinheiten</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_3" name="Druckregler">
-              <label for="product-type_3">Druckregler</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_4" name="Entnahmestellen">
-              <label for="product-type_4">Entnahmestellen</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_5" name="Entspannungsstationen">
-              <label for="product-type_5">Entspannungsstationen</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_6" name="Filter">
-              <label for="product-type_6">Filter</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_7" name="Kontaktmanometer">
-              <label for="product-type_7">Kontaktmanometer</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_8" name="Reinigungspatronen (mol)">
-              <label for="product-type_8">Reinigungspatronen (mol)</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_9" name="Spüleinrichtungen">
-              <label for="product-type_9">Spüleinrichtungen</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_10" name="Ventile">
-              <label for="product-type_10">Ventile</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_11" name="Zubehör / Sonstiges">
-              <label for="product-type_11">Zubehör / Sonstiges</label>
-            </li>
-          </ul>
-        </div>
-        <div class="row filter-block">
-          <div class="title-block">
-            <p class="filter-title">Art des Gases</p>
-            <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+          <div class="row filter-block">
+            <div class="title-block">
+              <p class="filter-title">Art des Gases</p>
+              <button class="hide-filter-toggle"><img src="img/icons/filter-arrow.svg" alt="arrow"></button>
+            </div>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_12" name="Korrosiv">
+                <label for="product-type_12">Korrosiv</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_13" name="Nicht korrosiv">
+                <label for="product-type_13">Nicht korrosiv</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_14" name="Gasgemisch">
+                <label for="product-type_14">Gasgemisch</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_15" name="Toxisch">
+                <label for="product-type_15">Toxisch</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_16" name="Halbleitergase">
+                <label for="product-type_16">Halbleitergase</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" id="product-type_17" name="Medizinische Gase">
+                <label for="product-type_17">Medizinische Gase</label>
+              </li>
+            </ul>
           </div>
-          <ul class="filter-list">
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_12" name="Korrosiv">
-              <label for="product-type_12">Korrosiv</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_13" name="Nicht korrosiv">
-              <label for="product-type_13">Nicht korrosiv</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_14" name="Gasgemisch">
-              <label for="product-type_14">Gasgemisch</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_15" name="Toxisch">
-              <label for="product-type_15">Toxisch</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_16" name="Halbleitergase">
-              <label for="product-type_16">Halbleitergase</label>
-            </li>
-            <li class="filter-item">
-              <input type="checkbox" id="product-type_17" name="Medizinische Gase">
-              <label for="product-type_17">Medizinische Gase</label>
-            </li>
-          </ul>
         </div>
         <div class="row mobile-buttons">
           <button class="apply-changes close-filter">Apply changes <span class="arrow"></span></button>
@@ -503,10 +542,44 @@
     </div>
   </section>
   <section id="contact-us">
-    <div class="container">
+    <div class="container active-block" id="contact-text-block">
       <div class="row">
         <p class="title"><span class="bold">Get in touch with us.</span> We’re happy to help.</p>
-        <a href="#" class="contact-link">Contact our experts</a>
+        <button class="contact-link" id="show-form-block">Contact our experts</button>
+      </div>
+    </div>
+    <div class="container" id="contact-form-block">
+      <div class="text-block">
+        <p class="title"><span class="bold">Spectronews.</span> Stay up to date.</p>
+        <p class="text-info">Sign up for spectronews and you will get the latest information and interesting facts about people, products and our company. </p>
+      </div>
+      <div class="row form-block">
+        <form action="#">
+          <div class="inputs">
+            <div class="input-block">
+              <p class="placeholder">Email Address</p>
+              <input type="email" name="email" class="text-input" required="">
+            </div>
+          </div>
+          <div class="inputs">
+            <div class="input-block">
+              <p class="placeholder">First Name</p>
+              <input type="text" name="first-name" class="text-input" required="">
+              <a href="#" class="password-control"></a>
+            </div>
+            <div class="input-block">
+              <p class="placeholder">Last Name</p>
+              <input type="text" name="last-name" class="text-input" required="">
+              <a href="#" class="password-control"></a>
+            </div>
+          </div>
+          <div class="privacy-policy">
+            <input type="checkbox" name="checking-privacy" id="checking-privacy">
+            <label for="checking-privacy">I agree with the </label>
+            <a href="#" class="privacy-link">Privacy Policy</a>
+          </div>
+          <button class="send-form">Subscribe</button>
+        </form>
       </div>
     </div>
   </section>
@@ -572,24 +645,5 @@
   <script src="https://kit.fontawesome.com/319240cf71.js" crossorigin="anonymous"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/index.js"></script>
-  <script>
-    $(".filter-block .hide-filter-toggle").on("click", function(event){
-      event.preventDefault();
-      var $parentBlock = $(this).parents(".filter-block"); 
-      $parentBlock.toggleClass("hidden-block");
-    });
-
-    $("#show-filter").on("click", function(event){
-      event.preventDefault();
-      var $filterBlock = $(".filter"); 
-      $filterBlock.toggleClass("opened");
-    });
-    
-    $(".close-filter").on("click", function(event){
-      event.preventDefault();
-      var $filterBlock = $(".filter"); 
-      $filterBlock.toggleClass("opened");
-    });
-  </script>
 </body>
 </html>

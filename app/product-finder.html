@@ -645,24 +645,5 @@
   <script src="https://kit.fontawesome.com/319240cf71.js" crossorigin="anonymous"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/index.js"></script>
-  <script>
-    $(".filter-block .hide-filter-toggle").on("click", function(event){
-      event.preventDefault();
-      let $parentBlock = $(this).parents(".filter-block"); 
-      $parentBlock.toggleClass("hidden-block");
-    });
-
-    $("#show-filter").on("click", function(event){
-      event.preventDefault();
-      let $filterBlock = $(".filter"); 
-      $filterBlock.toggleClass("opened");
-    });
-    
-    $(".close-filter").on("click", function(event){
-      event.preventDefault();
-      let $filterBlock = $(".filter"); 
-      $filterBlock.toggleClass("opened");
-    });
-  </script>
 </body>
 </html>

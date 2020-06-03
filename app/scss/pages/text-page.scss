@@ -44,7 +44,7 @@ section#text-section {
         @include transition-hover;
 
         &:hover {
-          color: #002570;
+          color: $marine-blue;
         }
       }
     }
