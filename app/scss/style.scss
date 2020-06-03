@@ -334,6 +334,11 @@ div#mobile-menu {
     display: flex;
     width: 100%;
     max-width: 550px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     button#show-languages {
       display: flex;

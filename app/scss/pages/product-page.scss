@@ -150,7 +150,7 @@ div#product-info-line {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #018081;
+  border-bottom: 1px solid $spectroLabColor;
   z-index: 99;
   @include transition-hover;
 
@@ -182,8 +182,8 @@ div#product-info-line {
         @include standardButton(230px, $blackColor, $blackColor, #ffffff);
 
         &:hover {
-          background-color: #018081;
-          border: 1px solid #018081;
+          background-color: $spectroLabColor;
+          border: 1px solid $spectroLabColor;
           color: #ffffff;
         }
 
@@ -449,7 +449,7 @@ div#product-info-line.show {
 // LINE SECTION
 
 section#line-section {
-  background-color: #018081;
+  background-color: $spectroLabColor;
 
   div.container {
     padding: 21px 10px 20px 10px;
@@ -779,36 +779,14 @@ section#detailed-info {
 // CONTACT US
 
 section#contact-us {
-  background-color: #018081;
-
-  div.container {
-    padding: 70px 10px;
-
+  background-color: $spectroLabColor;
+  div#contact-text-block {
     div.row {
-      justify-content: center;
-      align-items: center;
-
-      p.title {
-        font-size: 28px;
-        line-height: 1.21;
-        color: #ffffff;
-        text-align: center;
-        margin-right: 64px;
-
-        span.bold {
-          font-weight: bold;
-        }
-      }
-
-      p.title.mobile-title {
-        display: none;
-      }
-
-      a.contact-link {
-        @include standardButton(213px, #ffffff, #ffffff, #018081);
+      button.contact-link {
+        @include standardButton(213px, #ffffff, #ffffff, $spectroLabColor);
 
         &:hover {
-          background-color: #018081;
+          background-color: $spectroLabColor;
           color: #ffffff;
         }
       }
@@ -846,15 +824,7 @@ section#contact-us {
           font-size: 22px;
           line-height: 1.36;
         }
-
-        p.title.desktop-title {
-          display: none;
-        }
-
-        p.title.mobile-title {
-          display: inline;
-        }
-
+        
         a.contact-link {
           width: 226px;
         }
