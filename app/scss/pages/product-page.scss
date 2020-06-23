@@ -66,7 +66,7 @@ section#product-info {
         margin: 0;
       }
 
-      div.product-slider {
+      div.product-photos {
         display: flex;
 
         div.slide-block {
@@ -85,6 +85,30 @@ section#product-info {
           div.image-block {
             img {
               max-width: 270px;
+            }
+          }
+        }
+      }
+
+      div.product-slider {
+        display: none;
+        width: 100%;
+        justify-content: center;
+        border: 1px solid #dadada;
+
+        div.slide-block {
+          max-width: 100%;
+          height: 383px;
+          padding: 11px;
+
+          div.image-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            img {
+              max-width: 266px;
             }
           }
         }
@@ -225,6 +249,7 @@ div#product-info-line.show {
       }
     }
   }
+
   li.slick-active {
     button {
       &:before {
@@ -284,6 +309,7 @@ div#product-info-line.show {
           font-size: 30px;
           line-height: 1.33;
           letter-spacing: 0.3px;
+          width: 100%;
         }
       }
 
@@ -351,27 +377,12 @@ div#product-info-line.show {
           margin-bottom: 28px;
         }
 
+        div.product-photos {
+          display: none;
+        }
+
         div.product-slider {
-          width: 100%;
-          justify-content: center;
-          border: 1px solid #dadada;
-
-          div.slide-block {
-            max-width: 100%;
-            height: 383px;
-            padding: 11px;
-
-            div.image-block {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 100%;
-              height: 100%;
-              img {
-                max-width: 266px;
-              }
-            }
-          }
+          display: block;
         }
       }
 
@@ -780,6 +791,7 @@ section#detailed-info {
 
 section#contact-us {
   background-color: $spectroLabColor;
+
   div#contact-text-block {
     div.row {
       button.contact-link {

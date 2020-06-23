@@ -36,10 +36,11 @@ section#title-container {
   section#title-container {
     div.row {
       justify-content: center;
-      padding: 105px 0 0 0;
+      padding: 105px 16px 0 16px;
 
       div.title-block {
-        width: 288px;
+        width: 100%;
+        max-width: 500px;
         height: auto;
         padding: 14px 35px 14px 17px;
 
@@ -47,6 +48,7 @@ section#title-container {
           font-size: 30px;
           line-height: 1.33;
           letter-spacing: 0.3px;
+          max-width: 238px;
         }
       }
     }
@@ -83,57 +85,63 @@ section#products-categories {
         }
 
         div.line-variants {
-          margin-top: 17px;
           display: flex;
+          margin-top: 17px;
 
-          span.variant {
-            margin-right: 20px;
+          div.line {
+            width: 250px;
+            min-width: 250px;
+            display: flex;
 
-            a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 42px;
-              height: 42px;
-              border-radius: 100%;
-              font-size: 14px;
-              font-weight: bold;
-              line-height: 1.43;
-              letter-spacing: 1px;
-              color: #ffffff;
-              text-decoration: none;
+            span.variant {
+              margin-right: 20px;
+  
+              a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42px;
+                height: 42px;
+                border-radius: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.43;
+                letter-spacing: 1px;
+                color: #ffffff;
+                text-decoration: none;
+              }
+                
+              &:last-child {
+                margin-right: 0;
+              }
             }
-              
-            &:last-child {
-              margin-right: 0;
+  
+            a#tec {
+              background-color: $spectroTecColor;
             }
-          }
-
-          a#tec {
-            background-color: $spectroTecColor;
-          }
-          a#com {
-            background-color: $spectroComColor;
-          }
-          a#lab {
-            background-color: $spectroLabColor;
-          }
-          a#cem {
-            background-color: $spectroCemColor;
-          }
-          a#pur {
-            background-color: $spectroPurColor;
-          }
-          a#med {
-            background-color: $spectroMedColor;
-            color: $blackColor;
-          }
-          a#sys {
-            background-color: $spectroSysColor;
-            color: $blackColor;
-          }
-          a#mol {
-            background-color: $spectroMolColor;
+            a#com {
+              background-color: $spectroComColor;
+            }
+            a#lab {
+              background-color: $spectroLabColor;
+            }
+            a#cem {
+              background-color: $spectroCemColor;
+            }
+            a#pur {
+              background-color: $spectroPurColor;
+            }
+            a#med {
+              background-color: $spectroMedColor;
+              color: $blackColor;
+            }
+            a#sys {
+              background-color: $spectroSysColor;
+              color: $blackColor;
+            }
+            a#mol {
+              background-color: $spectroMolColor;
+            }
           }
         }
       }
@@ -247,6 +255,7 @@ section#products-categories {
             }
           }
         }
+
         div.product-search {
           padding: 35px 15px;
 
@@ -255,7 +264,41 @@ section#products-categories {
             align-items: center;
 
             button.search-button {
+              width: 100%;
               margin: 19px 0 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section#products-categories {
+    div.container {
+      div.search-product {
+        div.product-line {
+          height: auto;
+
+          div.line-variants {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            div.line {
+              width: 100%;
+              max-width: 500px;
+              justify-content: space-between;
+
+              span.variant {
+                margin: 0 0 15px 0;
+  
+                a {
+                  width: 50px;
+                  height: 50px;
+                }
+              }
             }
           }
         }
@@ -281,12 +324,6 @@ section#products-categories {
           align-items: center;
           margin-bottom: 15px;
           padding-bottom: 10px;
-
-          div.line-variants {
-            span.variant {
-              margin: 0 5px 15px 5px;
-            }
-          }
         }
       }
 
@@ -313,23 +350,6 @@ section#products-categories {
           p.block-title {
             font-size: 16px;
             line-height: 1.63;
-          }
-
-          div.line-variants {
-            flex-wrap: wrap;
-            justify-content: space-between;
-            
-            span.variant {
-              display: flex;
-              justify-content: center;
-              width: 25%;
-              margin: 0 0 15px 0;
-
-              a {
-                width: 50px;
-                height: 50px;
-              }
-            }
           }
         }
 
@@ -465,7 +485,7 @@ section#exhibitions {
             font-size: 25px;
             font-weight: bold;
             line-height: 1.4;
-            margin-bottom: 25px;
+            margin-bottom: 21px;
           }
           p.location {
             font-weight: 600;
@@ -473,7 +493,7 @@ section#exhibitions {
           }
           p.info-text {
             line-height: 1.38;
-            margin-top: 25px;
+            margin-top: 22px;
             max-height: 70px;
             overflow: hidden;
             color: $blackColor;
@@ -481,7 +501,7 @@ section#exhibitions {
 
           a.exhibition-button {
             @include standardButton(224px, $blackColor, $blackColor, #ffffff);
-            margin-top: 25px;
+            margin-top: 28px;
 
             &:hover {
               background-color: #24449d;
@@ -583,7 +603,7 @@ section#exhibitions {
   }
 }
 
-@media screen and (max-width: 346px) {
+@media screen and (max-width: 400px) {
   section#exhibitions {
     div.container {
       div.title-block {
@@ -655,7 +675,7 @@ section#seminars {
         div.info-block {
           min-height: 408px;
           background-color: #f3f4f5;
-          padding: 25px 18px 41px 18px;
+          padding: 23px 18px 41px 18px;
 
           p.date {
             font-weight: 600;
@@ -679,7 +699,7 @@ section#seminars {
 
           a.exhibition-button {
             @include standardButton(224px, $blackColor, $blackColor, #ffffff);
-            margin-top: 10px;
+            margin-top: 34px;
 
             &:hover {
               background-color: #24449d;

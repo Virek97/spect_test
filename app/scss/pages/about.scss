@@ -144,7 +144,7 @@ section#our-team {
         }
 
         div.image-block {
-          width: 50%;
+          width: 52%;
           max-width: 598px;
           position: absolute;
           left: 0;
@@ -200,7 +200,7 @@ section#our-team {
 
 
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1235px) {
   section#our-philosophy {
     div.container {
       padding: 90px 70px 90px 70px;
@@ -238,6 +238,7 @@ section#our-team {
           padding-top: 0;
 
           h2.title {
+            text-align: center;
             margin: 0;
           }
 
@@ -276,11 +277,7 @@ section#our-team {
       div.row {
         flex-direction: column;
 
-        div.info-blocks {
-          h2.title {
-            text-align: center;
-          }
-          
+        div.info-blocks {          
           div.blocks {
             display: flex;
             flex-direction: column;

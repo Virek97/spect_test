@@ -93,15 +93,13 @@ $("#show-downloads-block").on("click", function (event) {
 
 // Слайдер фото на сторінці продукт --------------
 $(function () {
-	if(window.innerWidth <= 600) {
-		$('#slider-product').slick({
-			arrows: false,
-			infinite: true,
-			dots: true,
-			slidesToShow: 1,
-			slidesToScroll: 1
-		});
-	}
+	$('#slider-product').slick({
+		arrows: false,
+		infinite: true,
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 });
 // ----------------------------------------------------------
 

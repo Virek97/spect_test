@@ -307,7 +307,6 @@ section#products {
           background-color: transparent;
           border: 0;
           text-decoration: underline;
-          margin-left: 10px;
           cursor: pointer;
           @include transition-hover;
   
@@ -592,7 +591,6 @@ section#products {
             display: flex;
             justify-content: space-between;
             width: 100%;
-            max-width: 320px;
             margin-bottom: 15px;
 
             button.filter-clear {
@@ -646,6 +644,8 @@ section#products {
                 min-width: 110px;
                 max-height: 100px;
                 padding: 10px 13px;
+                border: 1px solid #f3f4f5;
+                border-right: 0;
 
                 img.product-image {
                   max-width: 84px;

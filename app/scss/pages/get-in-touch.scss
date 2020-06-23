@@ -237,6 +237,16 @@ section#get-in-touch {
           h2.title {
             margin: 0;
           }
+
+          div.form-block {
+            form#contact-form {
+              div.text-inputs {
+                input.text-input {
+                  max-width: 100%;
+                }
+              }
+            }
+          }
         }
 
         div.image-block {
@@ -259,26 +269,6 @@ section#get-in-touch {
           width: 100%;
           max-width: 760px;
           margin-top: 0;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 870px) {
-  section#get-in-touch {
-    div.container {
-      div.row {
-        div.info-block {
-          div.form-block {
-            form#contact-form {
-              div.text-inputs {
-                input.text-input {
-                  max-width: 100%;
-                }
-              }
-            }
-          }
         }
       }
     }

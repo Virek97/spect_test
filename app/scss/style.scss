@@ -1,16 +1,14 @@
-@import 'mixins';
-@import 'variables';
+@import "mixins";
+@import "variables";
 
-
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   outline: none;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 body {
@@ -35,7 +33,6 @@ section {
   justify-content: center;
   width: 100%;
 }
-
 
 // HEADER
 
@@ -184,8 +181,8 @@ header {
         margin-right: 9px;
         @include transition-hover;
       }
-      
-      div.lines {        
+
+      div.lines {
         span {
           display: block;
           width: 20px;
@@ -204,8 +201,8 @@ header {
         p.menu-name {
           color: $marine-blue;
         }
-        
-        div.lines {        
+
+        div.lines {
           span {
             background-color: $marine-blue;
           }
@@ -221,9 +218,12 @@ div#search-modal {
   padding: 100px 50px 50px 50px;
 
   div.row {
+    justify-content: center;
     align-items: center;
 
     form#header-search {
+      margin-right: 30px;
+
       input.search-input {
         width: 700px;
         background-color: transparent;
@@ -233,7 +233,7 @@ div#search-modal {
         font-size: 35px;
         font-weight: bold;
         color: #ffffff;
-        
+
         &::placeholder {
           color: #ffffff;
         }
@@ -300,7 +300,7 @@ div#mobile-menu {
 
     ul {
       list-style-type: none;
-      
+
       li.menu-item {
         text-align: center;
         margin-bottom: 32px;
@@ -362,7 +362,7 @@ div#mobile-menu {
         transform: rotate(-90deg);
       }
     }
-    
+
     a.search-popup {
       display: flex;
       justify-content: center;
@@ -455,7 +455,7 @@ div#select-languages {
   header {
     div.row {
       padding: 10px 16px 10px 13px;
-      
+
       div.menu-container {
         display: none;
       }
@@ -470,18 +470,17 @@ div#select-languages {
 @media screen and (max-width: 900px) {
   div#search-modal {
     padding: 50px 30px;
-  
+
     div.row {
       form#header-search {
         width: 100%;
-        padding-right: 30px;
 
         input.search-input {
           width: 100%;
           font-size: 25px;
         }
       }
-  
+
       a.popup-modal-dismiss {
         font-size: 25px;
       }
@@ -492,7 +491,7 @@ div#select-languages {
 @media screen and (max-width: 650px) {
   header {
     height: auto;
-  
+
     div.row {
       div.logo img {
         width: 69px;
@@ -516,8 +515,6 @@ div#select-languages {
 }
 
 // CLOSE HEADER
-
-
 
 // CONTACT US
 
@@ -608,7 +605,7 @@ section#contact-us {
           &:last-child {
             margin-right: 0;
           }
-  
+
           p.placeholder {
             font-size: 16px;
             line-height: 1.38;
@@ -616,7 +613,7 @@ section#contact-us {
             opacity: 0.8;
             margin-bottom: 14px;
           }
-  
+
           input.text-input {
             width: 100%;
             max-width: 300px;
@@ -648,15 +645,15 @@ section#contact-us {
           + label {
             font-size: 18px;
             line-height: 1.33;
-            color: rgba(243,244,245,0.8);
+            color: rgba(243, 244, 245, 0.8);
             cursor: pointer;
             @include transition-hover;
 
             &::before {
-              content: '';
+              content: "";
               width: 32px;
               height: 32px;
-              border: 1px solid rgba(243,244,245,0.8);
+              border: 1px solid rgba(243, 244, 245, 0.8);
               border-radius: 3px;
               position: absolute;
               top: -5px;
@@ -665,7 +662,7 @@ section#contact-us {
             }
 
             &::after {
-              content: '\2713';
+              content: "\2713";
               font-size: 25px;
               width: 32px;
               height: 32px;
@@ -678,7 +675,7 @@ section#contact-us {
             }
 
             &:hover {
-              color: rgba(243,244,245,1);
+              color: rgba(243, 244, 245, 1);
             }
           }
 
@@ -695,10 +692,10 @@ section#contact-us {
           font-size: 18px;
           font-weight: 600;
           line-height: 1.33;
-          color: rgba(243,244,245,0.8);
+          color: rgba(243, 244, 245, 0.8);
 
           &:hover {
-            color: rgba(243,244,245,1);
+            color: rgba(243, 244, 245, 1);
           }
         }
       }
@@ -749,10 +746,10 @@ section#contact-us {
 @media screen and (max-width: 870px) {
   section#contact-us {
     background-color: $marine-blue;
-  
+
     div#contact-text-block {
       padding: 70px 10px;
-  
+
       div.row {
         flex-direction: column;
 
@@ -842,8 +839,6 @@ section#contact-us {
 
 // CLOSE CONTACT US
 
-
-
 // FOOTER
 
 footer {
@@ -854,7 +849,7 @@ footer {
 
   div.container {
     padding: 47px 180px 27px 180px;
-    
+
     div.top {
       flex-direction: column;
       p.company-name {
@@ -876,7 +871,7 @@ footer {
     div.center {
       padding-bottom: 40px;
       border-bottom: 1px solid #bbbbbb;
-      
+
       div.column {
         display: flex;
         flex-direction: column;
@@ -892,8 +887,8 @@ footer {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: 175px;
-          margin-bottom: 20px;
+          width: 178px;
+          margin-bottom: 22px;
 
           p {
             font-size: 15px;
@@ -904,7 +899,7 @@ footer {
           }
         }
 
-        a.log-in-link  {
+        a.log-in-link {
           @include standardButton(226px, transparent, #383838, #383838);
           margin-top: 38px;
 
@@ -926,7 +921,7 @@ footer {
               li.menu-item {
                 margin-bottom: 23px;
                 list-style-type: none;
-  
+
                 a {
                   font-size: 14px;
                   font-weight: bold;
@@ -935,12 +930,12 @@ footer {
                   color: #383838;
                   text-decoration: none;
                   text-transform: uppercase;
-  
+
                   &:hover {
                     text-decoration: underline;
                   }
                 }
-  
+
                 &:last-child {
                   margin-bottom: 0;
                 }
@@ -956,7 +951,7 @@ footer {
 
       div.social-media {
         width: 203px;
-        
+
         p.title {
           font-size: 14px;
           font-weight: bold;

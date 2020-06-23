@@ -317,7 +317,7 @@ section#links-section {
             align-items: center;
   
             a.link {
-              width: 240px;
+              width: 100%;
               margin: 0 0 20px 0;
   
               &:last-child {
@@ -350,7 +350,7 @@ section#experts {
 
     div.experts-blocks {
       flex-direction: column;
-      margin-top: 54px;
+      margin-top: 56px;
 
       div.titles-block {
         display: flex;
@@ -402,7 +402,7 @@ section#experts {
           width: calc(100% - 73px);
           max-width: 1057px;
           background-color: #f3f4f5;
-          padding: 33px 40px 33px 87px;
+          padding: 33px 36px 33px 87px;
           z-index: 1;
 
           div.info-block {
@@ -411,7 +411,7 @@ section#experts {
             &:nth-child(1) { margin-right: 56px; }
             &:nth-child(2) { margin-right: 58px; }
             &:nth-child(3) { margin-right: 61px; }
-            &:nth-child(4) { margin-right: 42px; }
+            &:nth-child(4) { margin-right: 38px; }
 
             &:last-child {
               width: auto;
